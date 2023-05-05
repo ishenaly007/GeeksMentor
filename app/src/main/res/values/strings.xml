@@ -48,4 +48,28 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+    //Added new strings
+    <string name="enter">Войдите</string>
+    <string name="login">Логин</string>
+    <string name="forgot_your_password">Забыли пароль?</string>
+    <string name="password">Пароль</string>
+    <string name="enter2">Войти</string>
+    <string name="enter_using_google">Войти с помощью Google</string>
+    <string name="enter_using_facebook">Войти с помощью Facebook</string>
+    <string name="or">или</string>
+    <string name="no_account_register_it">Нет аккаунта? Зарегистрируйтесь</string>
+    <string name="registration">Зарегистрируйтесь</string>
+    <string name="confirm_password">Повторите пароль</string>
+    <string name="recover_email">Восстановление пароля</string>
+    <string name="confirm">Подтвердить</string>
+    <string name="send_code_after">Отправить код заново через</string>
+    <string name="code_sent_on_email">Введите код отправленный на почту</string>
+    <string name="email_example">example@gmail.com</string>
+    <string name="email">Эл.почта</string>
+    <string name="find_mentor_board1">Найди ментора мечты или стань им</string>
+    <string name="continue_board1">Далее</string>
+    <string name="only_best_mentors">Только лучшие ментора</string>
+    <string name="skip">Пропустить</string>
+    <string name="fio">ФИО</string>
+    <string name="have_account_enter">Уже есть аккаунт? Войдите</string>
 </resources>

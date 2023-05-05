@@ -51,4 +51,7 @@ dependencies {
 
     //view pager2
     implementation 'androidx.viewpager2:viewpager2:1.0.0'
+
+    //Code verification view
+    implementation "com.github.fraggjkee:sms-confirmation-view:1.7.1"
 }
