@@ -3,4 +3,17 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="no_internet_dialog_with">312dp</dimen>
+    <dimen name="no_internet_dialog_height">252dp</dimen>
+    <dimen name="no_internet_dialog_corner_radius">28dp</dimen>
+    <dimen name="iv_x_margin_top">24dp</dimen>
+    <dimen name="bad_con_margin_top">20dp</dimen>
+    <dimen name="bad_con_ts">24sp</dimen>
+    <dimen name="tv_tip_margin_top">16dp</dimen>
+    <dimen name="tv_tip_padding_h">20dp</dimen>
+    <dimen name="tv_tip_text_size">16sp</dimen>
+    <dimen name="tv_exit_try_margin_s_e">56dp</dimen>
+    <dimen name="tv_exit_try_margin_b">20dp</dimen>
+    <dimen name="tv_exit_try_padding">12dp</dimen>
+    <dimen name="tv_exit_try_text_size">16sp</dimen>
 </resources>

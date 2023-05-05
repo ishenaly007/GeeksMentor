@@ -48,4 +48,8 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+    <string name="bad_con">Плохое соединение</string>
+    <string name="try_reconnect">Попробуйте переподключиться или перейти на мобильный интернет</string>
+    <string name="exit">Выйти</string>
+    <string name="try_again">Повторить</string>
 </resources>
