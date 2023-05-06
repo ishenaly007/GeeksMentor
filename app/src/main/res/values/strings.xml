@@ -48,11 +48,14 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+
     <string name="onboard_1">Найди ментора мечты или стань им</string>
     <string name="onboard_2">Только лучшие ментора</string>
     <string name="continue_btn">Далее</string>
     <string name="todo">TODO</string>
 
+
+    //Added new strings
     <string name="enter">Войдите</string>
     <string name="login">Логин</string>
     <string name="forgot_your_password">Забыли пароль?</string>
@@ -75,4 +78,7 @@
     <string name="only_best_mentors">Только лучшие ментора</string>
     <string name="skip">Пропустить</string>
     <string name="title_profile">Profile</string>
+    <string name="fio">ФИО</string>
+    <string name="have_account_enter">Уже есть аккаунт? Войдите</string>
+
 </resources>
