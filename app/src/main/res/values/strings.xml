@@ -49,6 +49,12 @@
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
 
+    <string name="bad_con">Плохое соединение</string>
+    <string name="try_reconnect">Попробуйте переподключиться или перейти на мобильный интернет</string>
+    <string name="exit">Выйти</string>
+    <string name="try_again">Повторить</string>
+
+
     <string name="onboard_1">Найди ментора мечты или стань им</string>
     <string name="onboard_2">Только лучшие ментора</string>
     <string name="continue_btn">Далее</string>
@@ -80,5 +86,6 @@
     <string name="title_profile">Profile</string>
     <string name="fio">ФИО</string>
     <string name="have_account_enter">Уже есть аккаунт? Войдите</string>
+
 
 </resources>
