@@ -14,8 +14,36 @@
         <!-- Customize your theme here. -->
     </style>
   <!-- Base application theme. -->
-    <style name="Base.Theme.GeeksMentor" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <style name="btn_white_and_black">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:backgroundTint">#262523</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/sf_medium</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="btn_yellow_and_black">
+        <item name="android:textColor">#262523</item>
+        <item name="android:backgroundTint">#FFE600</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/sf_medium</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="et_white_and_black">
+        <item name="android:textColorHint">#9E9E9E</item>
+        <item name="android:textColor">#9E9E9E</item>
+        <item name="android:background">@drawable/et_background</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/sf_medium</item>
+        <item name="android:drawablePadding">8dp</item>
+    </style>
+
+    <style name="btn_yellow_and_black">
+        <item name="android:textColor">#262523</item>
+        <item name="android:backgroundTint">#FFE600</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textAllCaps">false</item>
     </style>
 </resources>
