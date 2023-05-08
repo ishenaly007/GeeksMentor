@@ -3,14 +3,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.onboard.OnBoardFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewpager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:textSize="40sp"
-        android:gravity="center"
-        android:text="1" />
+        />
 
+    <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+        android:id="@+id/dots_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:dotsSize="10dp"
+        app:dotsColor="@color/white"
+        app:selectedDotColor="@color/white"
+        android:layout_marginBottom="48dp"
+        android:layout_marginHorizontal="150dp"
+        app:dotsSpacing="4dp"
+        android:layout_gravity="bottom|center"/>
 </FrameLayout>
