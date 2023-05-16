@@ -10,7 +10,7 @@
     //Added new colors
     <color name="black_new">#262523</color>
     <color name="white_new">#FFFFFF</color>
-    <color name="yellow_new">#F7DF1E</color>
-    <color name="light_grey_new">#9E9E9E</color>
-    <color name="grey_new">#9E9E9E</color>
+    <color name="yellow_new">#FFE600</color>
+    <color name="light_grey_new">#F5F6F6</color>
+    <color name="grey_new">#43413D</color>
 </resources>

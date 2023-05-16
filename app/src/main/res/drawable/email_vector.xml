@@ -4,6 +4,5 @@
     android:width="25dp"
     android:viewportWidth="25"
     android:viewportHeight="25">
-                        <path android:pathData="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" android:strokeColor="#9E9E9E" android:strokeWidth="2" android:strokeLineCap="round" android:strokeLineJoin="round"/>
-                        <path android:pathData="M22 6L12 13L2 6" android:strokeColor="#9E9E9E" android:strokeWidth="2" android:strokeLineCap="round" android:strokeLineJoin="round"/>
+        <path android:pathData="M23 8.22222V7.66667C23 6.63444 23 6.11834 22.9322 5.68656C22.5596 3.30934 20.7138 1.44489 18.3604 1.06844C17.9329 1 17.4219 1 16.4 1H9.8C6.71967 1 5.17956 0.999998 4.003 1.60555C2.96812 2.13822 2.12673 2.98811 1.5995 4.03345C1 5.22178 1 6.77756 1 9.88889V12.1111C1 15.2222 1 16.7778 1.5995 17.9667C2.12673 19.0122 2.96812 19.8622 4.003 20.3944C5.17956 21 6.71967 21 9.8 21H16.4C17.4219 21 17.9329 21 18.3604 20.9311C20.7138 20.5556 22.5596 18.6911 22.9322 16.3133C23 15.8822 23 15.3656 23 14.3333V13.7778M18.6 6.55556L17.5 7.29634L16.8814 7.71289C15.1172 8.90089 14.2351 9.49489 13.2817 9.72567C12.4391 9.92967 11.5609 9.92967 10.7183 9.72567C9.76491 9.49489 8.88282 8.90089 7.11864 7.71289L6.5 7.29634L5.4 6.55556" android:strokeColor="#242424" android:strokeWidth="1.5" android:strokeLineCap="round"/>
 </vector>

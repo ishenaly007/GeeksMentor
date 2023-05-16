@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:text="@string/find_mentor_board1"
         android:textSize="26sp"
-        android:fontFamily="@font/sf_medium"
+        android:fontFamily="@font/roboto_medium"
         android:textColor="@color/white_new"
         android:layout_gravity="bottom|center"
         android:layout_marginBottom="148dp"
