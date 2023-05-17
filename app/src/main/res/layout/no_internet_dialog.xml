@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/no_internet_dialog_with"
+    android:layout_height="@dimen/no_internet_dialog_height"
+    android:layout_gravity="center"
+    android:backgroundTint="@color/no_internet_dialog_background"
+    app:cardCornerRadius="@dimen/no_internet_dialog_corner_radius"
+    tools:ignore="TextSizeCheck">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/iv_x_margin_top"
+            android:importantForAccessibility="no"
+            android:src="@drawable/x"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvBadCon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bad_con_margin_top"
+            android:text="@string/bad_con"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/bad_con_ts"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivX" />
+
+        <TextView
+            android:id="@+id/tvTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/tv_tip_margin_top"
+            android:paddingHorizontal="@dimen/tv_tip_padding_h"
+            android:text="@string/try_reconnect"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tv_tip_text_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvBadCon"
+            app:layout_constraintVertical_bias="0" />
+
+        <TextView
+            android:id="@+id/tvExit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/tv_exit_try_margin_s_e"
+            android:layout_marginBottom="@dimen/tv_exit_try_margin_b"
+            android:padding="@dimen/tv_exit_try_padding"
+            android:text="@string/exit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tv_exit_try_text_size"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTip"
+            app:layout_constraintVertical_bias="1" />
+
+        <TextView
+            android:id="@+id/tvRetry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/tv_exit_try_margin_s_e"
+            android:layout_marginBottom="@dimen/tv_exit_try_margin_b"
+            android:padding="@dimen/tv_exit_try_padding"
+            android:text="@string/try_again"
+            android:textColor="@color/tv_try_color"
+            android:textSize="@dimen/tv_exit_try_text_size"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTip"
+            app:layout_constraintVertical_bias="1" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

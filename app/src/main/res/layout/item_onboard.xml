@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/black_new">
+
+    <FrameLayout
+        android:id="@+id/onboard_first"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/better_boarding_one"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/first_title"
+            android:layout_width="328dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginHorizontal="@dimen/mrg_hor_16"
+            android:layout_marginBottom="148dp"
+            android:text=""
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/white_new"
+            android:textSize="26sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_boarding1"
+            android:layout_width="328dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="84dp"
+            app:cornerRadius="10dp"
+            android:text="@string/continue_btn"
+            android:textAllCaps="false"
+            android:drawableEnd="@drawable/arrow_right_black"
+            android:paddingStart="36dp"
+            style="@style/btn_yellow_and_black"
+            tools:ignore="RtlSymmetry" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/onboard_second"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/arrow_board2"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/arrow_left_white"
+            android:layout_marginTop="83dp"
+            android:layout_marginStart="21dp"
+            />
+
+        <ImageView
+            android:id="@+id/board_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/shadow2"
+            android:layout_marginStart="69dp"
+            android:layout_marginTop="210dp"
+            android:contentDescription="@string/todo" />
+
+        <ImageView
+            android:id="@+id/img_boarding_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/boarding_two"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="143dp"
+            android:contentDescription="@string/todo" />
+
+        <ImageView
+            android:id="@+id/onboard_likes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/board2_like"
+            android:layout_marginStart="95dp"
+            android:layout_marginTop="131dp"
+            android:contentDescription="@string/todo" />
+
+        <TextView
+            android:id="@+id/second_title"
+            android:layout_width="328dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginHorizontal="@dimen/mrg_hor_16"
+            android:layout_marginBottom="148dp"
+            android:text=""
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/white_new"
+            android:textSize="26sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_boarding2"
+            android:layout_width="328dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="84dp"
+            app:cornerRadius="10dp"
+            android:text="@string/continue_btn"
+            android:textAllCaps="false"
+            android:drawableEnd="@drawable/arrow_right_black"
+            android:paddingStart="36dp"
+            style="@style/btn_yellow_and_black"
+            tools:ignore="RtlSymmetry" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/onboard_third"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/arrow_board3"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/arrow_left_white"
+            android:layout_marginTop="83dp"
+            android:layout_marginStart="21dp"
+            />
+
+        <ImageView
+            android:layout_width="46dp"
+            android:layout_height="67dp"
+            android:src="@drawable/logo_yellow"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="72dp"
+            android:contentDescription="@string/todo" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/enter_board3"
+            android:layout_width="328dp"
+            android:layout_height="58dp"
+            app:backgroundTint="@color/white_new"
+            app:cornerRadius="10dp"
+            android:text="@string/enter2"
+            android:textColor="@color/black_new"
+            android:textAllCaps="false"
+            android:fontFamily="@font/roboto_medium"
+            android:textSize="14sp"
+            android:layout_marginTop="249dp"
+            android:layout_gravity="top|center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/or"
+            android:textColor="@color/white_new"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="16sp"
+            android:layout_marginTop="321dp"
+            android:layout_gravity="center|top"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/register_board3"
+            android:layout_width="328dp"
+            android:layout_height="58dp"
+            app:backgroundTint="@color/white_new"
+            app:cornerRadius="10dp"
+            android:text="@string/registration"
+            android:textColor="@color/black_new"
+            android:textAllCaps="false"
+            android:fontFamily="@font/roboto_medium"
+            android:textSize="14sp"
+            android:layout_marginTop="364dp"
+            android:layout_gravity="top|center"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_boarding3"
+            android:layout_width="328dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="84dp"
+            app:cornerRadius="10dp"
+            android:text="@string/continue_btn"
+            android:textAllCaps="false"
+            style="@style/btn_yellow_and_black"
+            tools:ignore="RtlSymmetry" />
+    </FrameLayout>
+
+</FrameLayout>
