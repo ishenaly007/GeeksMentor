@@ -87,5 +87,21 @@
     <string name="fio">ФИО</string>
     <string name="have_account_enter">Уже есть аккаунт? Войдите</string>
 
+    <string name="registration2">Регистрация</string>
+    <string name="create_new_password">Придумайте новый пароль</string>
+    <string name="new_password">Новый пароль</string>
+    <string name="repeat_new_password">Повторите новый пароль</string>
+    <string name="good_day">Добрый день!</string>
+    <string name="searching_mentors">Поиск менторов</string>
+    <string name="ux_ui">UX-UI Дизайн</string>
+    <string name="frontend">Frontend</string>
+    <string name="backend">Backend</string>
+    <string name="android">Android</string>
+    <string name="technical_mentors">Тех.менторы</string>
+    <string name="admins">Админы</string>
+    <string name="mentors_of_month">🏆 Менторы месяца</string>
+    <string name="all_mentors">Все менторы</string>
+    <string name="sultan_ergeshov">Султан Эргешов</string>
+    <string name="ux_ui_mentors">Менторы по UX-UI Дизайну</string>
 
 </resources>
