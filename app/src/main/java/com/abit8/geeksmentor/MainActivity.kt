@@ -1,8 +1,12 @@
 package com.abit8.geeksmentor
 
 import android.graphics.Color
+
+import android.os.Build
+
 import android.os.Bundle
 import android.view.View
+import android.view.Window
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.view.isVisible
@@ -23,6 +27,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
         val navView: BottomNavigationView = binding.navView
         val navController = findNavController(R.id.nav_host_fragment_activity_main)
 
@@ -39,6 +44,7 @@ class MainActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
 
         val bottomNavFragments = arrayListOf(
             R.id.navigation_home,
