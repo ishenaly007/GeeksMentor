@@ -1,15 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="@dimen/mrg_hor_16"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/mentors_profile_language_fragment"
     tools:context=".ui.mentorprofile.LanguageFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/back"
+        android:textStyle="bold"
+        android:textColor="@color/black_new"
+        android:textSize="16sp"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/roboto_regular"
+        app:drawableLeftCompat="@drawable/left_arrow" />
 
-</FrameLayout>
+    <RelativeLayout
+        android:id="@+id/btn_russian_language"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_back"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="32dp">
+
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:src="@drawable/russian_flag"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="Русский"
+            android:textSize="16sp"
+            android:layout_marginStart="38dp"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/black_new" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/right_arrow"
+            android:layout_marginStart="340dp"
+            android:layout_marginTop="3dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/btn_kyrgyz_language"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_russian_language"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="32dp">
+
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:src="@drawable/kyrgyz_flag"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="Кыргызча"
+            android:textSize="16sp"
+            android:layout_marginStart="38dp"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/black_new" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/right_arrow"
+            android:layout_marginStart="340dp"
+            android:layout_marginTop="3dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/btn_english_language"
+        android:layout_width="match_parent"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_kyrgyz_language"
+        android:layout_height="20dp">
+
+        <ImageView
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:src="@drawable/england_flag"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="English"
+            android:textSize="16sp"
+            android:layout_marginStart="38dp"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/black_new" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/right_arrow"
+            android:layout_marginStart="340dp"
+            android:layout_marginTop="3dp"/>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
