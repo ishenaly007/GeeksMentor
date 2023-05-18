@@ -86,6 +86,12 @@
     <string name="title_profile">Profile</string>
     <string name="fio">ФИО</string>
     <string name="have_account_enter">Уже есть аккаунт? Войдите</string>
+    <string name="my_data">Мои данные</string>
+    <string name="language">Язык</string>
+    <string name="notification">Уведомления</string>
+    <string name="edit_profile">Редактировать профиль</string>
+    <string name="ux_ui_">UX-UI Дизайнер</string>
+    <string name="okay_i_pull_up">Okay I pull up</string>
 
     <string name="registration2">Регистрация</string>
     <string name="create_new_password">Придумайте новый пароль</string>

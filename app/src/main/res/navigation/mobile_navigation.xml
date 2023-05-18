@@ -46,5 +46,10 @@
         android:name="com.abit8.geeksmentor.ui.auth.SignInFragment"
         android:label="fragment_sign_in"
         tools:layout="@layout/fragment_sign_in" />
+    <fragment
+        android:id="@+id/mentorProfileFragment"
+        android:name="com.abit8.geeksmentor.ui.mentorprofile.MentorProfileFragment"
+        android:label="fragment_mentor_profile"
+        tools:layout="@layout/fragment_mentor_profile" />
 
 </navigation>

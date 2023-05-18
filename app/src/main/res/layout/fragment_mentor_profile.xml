@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/mrg_hor_16"
+    android:layout_height="match_parent"
+    android:id="@+id/mentors_profile_fragment"
+    tools:context=".ui.mentorprofile.MentorProfileFragment">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/mentors_profile_photo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mentors_profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mentors_profile_photo"
+        android:text="@string/okay_i_pull_up"
+        android:layout_marginTop="23.5dp"
+        android:layout_marginStart="@dimen/mrg_hor_16"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/black_new"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/mentors_profile_major"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/mentors_profile_name"
+        app:layout_constraintStart_toEndOf="@+id/mentors_profile_photo"
+        android:text="@string/ux_ui_"
+        android:layout_marginTop="6dp"
+        android:textSize="16sp"
+        android:layout_marginStart="@dimen/mrg_hor_16"
+        android:textColor="@color/black_new"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_edit_mentor_profile_info"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@id/mentors_profile_photo"
+        android:layout_marginTop="@dimen/mrg_hor_16"
+        app:cornerRadius="8dp"
+        android:backgroundTint="@color/yellow_new"
+        android:text="@string/edit_profile"
+        android:textColor="@color/black_new"
+        android:letterSpacing="0"
+        android:textAllCaps="false"
+        android:fontFamily="@font/roboto_regular"
+        android:textSize="14sp"/>
+
+    <RelativeLayout
+        android:id="@+id/btn_mentors_profile_notification"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_edit_mentor_profile_info"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="32dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="@string/notification"
+            android:textSize="16sp"
+            android:drawablePadding="15dp"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/black_new"
+            app:drawableLeftCompat="@drawable/notification_bell" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/right_arrow"
+            android:layout_marginStart="340dp"
+            android:layout_marginTop="3dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/btn_mentors_profile_language"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_mentors_profile_notification"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="32dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="@string/language"
+            android:textSize="16sp"
+            android:drawablePadding="15dp"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/black_new"
+            app:drawableLeftCompat="@drawable/globe" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/right_arrow"
+            android:layout_marginStart="340dp"
+            android:layout_marginTop="3dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/btn_mentors_profile_data"
+        android:layout_width="match_parent"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_mentors_profile_language"
+        android:layout_height="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="@string/my_data"
+            android:textSize="16sp"
+            android:drawablePadding="15dp"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/black_new"
+            app:drawableLeftCompat="@drawable/shield" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/right_arrow"
+            android:layout_marginStart="340dp"
+            android:layout_marginTop="3dp"/>
+
+    </RelativeLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_exit_mentor_profile"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/exit_btn_red"
+        android:fontFamily="@font/roboto_regular"
+        android:letterSpacing="0"
+        android:text="@string/exit"
+        android:textAllCaps="false"
+        android:textColor="@color/white_new"
+        android:textSize="14sp"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
