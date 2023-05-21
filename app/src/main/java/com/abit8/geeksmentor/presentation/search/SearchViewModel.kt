@@ -1,4 +1,4 @@
-package com.abit8.geeksmentor.ui.search
+package com.abit8.geeksmentor.presentation.search
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

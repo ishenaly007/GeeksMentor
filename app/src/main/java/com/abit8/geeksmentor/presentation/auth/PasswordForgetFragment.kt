@@ -1,4 +1,4 @@
-package com.abit8.geeksmentor.ui.auth
+package com.abit8.geeksmentor.presentation.auth
 
 import android.os.Bundle
 import android.view.LayoutInflater

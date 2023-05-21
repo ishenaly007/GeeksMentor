@@ -1,4 +1,4 @@
-package com.abit8.geeksmentor.ui.mentorprofile
+package com.abit8.geeksmentor.presentation.mentorprofile
 
 import android.os.Bundle
 import android.view.LayoutInflater

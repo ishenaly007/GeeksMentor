@@ -1,4 +1,4 @@
-package com.abit8.geeksmentor.ui.onboard.adapter
+package com.abit8.geeksmentor.presentation.onboard.adapter
 
 import android.view.LayoutInflater
 import android.view.View

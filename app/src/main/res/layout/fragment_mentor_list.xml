@@ -3,8 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/edit_mentor_profile_info_fragment"
-    tools:context=".presentation.mentorprofile.EditMentorProfileFragment">
+    tools:context=".presentation.MentorListFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView

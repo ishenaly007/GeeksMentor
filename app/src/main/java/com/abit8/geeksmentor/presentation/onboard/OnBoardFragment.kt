@@ -1,4 +1,4 @@
-package com.abit8.geeksmentor.ui.onboard
+package com.abit8.geeksmentor.presentation.onboard
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,7 +10,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.viewpager2.widget.ViewPager2
 import com.abit8.geeksmentor.R
 import com.abit8.geeksmentor.databinding.FragmentOnBoardBinding
-import com.abit8.geeksmentor.ui.onboard.adapter.OnBoardAdapter
+import com.abit8.geeksmentor.presentation.onboard.adapter.OnBoardAdapter
 
 class OnBoardFragment : Fragment() {
     private lateinit var binding: FragmentOnBoardBinding

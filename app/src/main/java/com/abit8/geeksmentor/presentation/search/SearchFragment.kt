@@ -1,4 +1,4 @@
-package com.abit8.geeksmentor.ui.search
+package com.abit8.geeksmentor.presentation.search
 
 import android.os.Bundle
 import android.view.LayoutInflater

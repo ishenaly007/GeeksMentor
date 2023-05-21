@@ -1,4 +1,4 @@
-package com.abit8.geeksmentor.ui.home
+package com.abit8.geeksmentor.presentation.home
 
 import android.content.IntentFilter
 import android.net.ConnectivityManager

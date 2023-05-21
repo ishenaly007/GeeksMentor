@@ -7,24 +7,24 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.abit8.geeksmentor.ui.home.HomeFragment"
+        android:name="com.abit8.geeksmentor.presentation.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/navigation_search"
-        android:name="com.abit8.geeksmentor.ui.search.SearchFragment"
+        android:name="com.abit8.geeksmentor.presentation.search.SearchFragment"
         android:label="@string/title_dashboard"
         tools:layout="@layout/fragment_search" />
 
     <fragment
         android:id="@+id/navigation_profile"
-        android:name="com.abit8.geeksmentor.ui.profile.ProfileFragment"
+        android:name="com.abit8.geeksmentor.presentation.profile.ProfileFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_profile" />
     <fragment
         android:id="@+id/onBoardFragment"
-        android:name="com.abit8.geeksmentor.ui.onboard.OnBoardFragment"
+        android:name="com.abit8.geeksmentor.presentation.onboard.OnBoardFragment"
         android:label="fragment_on_board"
         tools:layout="@layout/fragment_on_board" >
         <action
@@ -33,23 +33,38 @@
     </fragment>
     <fragment
         android:id="@+id/logInFragment"
-        android:name="com.abit8.geeksmentor.ui.auth.LogInFragment"
+        android:name="com.abit8.geeksmentor.presentation.auth.LogInFragment"
         android:label="fragment_log_in"
         tools:layout="@layout/fragment_log_in" />
     <fragment
         android:id="@+id/passwordForgetFragment"
-        android:name="com.abit8.geeksmentor.ui.auth.PasswordForgetFragment"
+        android:name="com.abit8.geeksmentor.presentation.auth.PasswordForgetFragment"
         android:label="fragment_password_forget"
         tools:layout="@layout/fragment_password_forget" />
     <fragment
         android:id="@+id/signInFragment"
-        android:name="com.abit8.geeksmentor.ui.auth.SignInFragment"
+        android:name="com.abit8.geeksmentor.presentation.auth.SignInFragment"
         android:label="fragment_sign_in"
         tools:layout="@layout/fragment_sign_in" />
     <fragment
         android:id="@+id/mentorProfileFragment"
-        android:name="com.abit8.geeksmentor.ui.mentorprofile.MentorProfileFragment"
+        android:name="com.abit8.geeksmentor.presentation.mentorprofile.MentorProfileFragment"
         android:label="fragment_mentor_profile"
         tools:layout="@layout/fragment_mentor_profile" />
+    <fragment
+        android:id="@+id/passwordForgetFragment2"
+        android:name="com.abit8.geeksmentor.presentation.auth.PasswordForgetFragment2"
+        android:label="fragment_password_forget2"
+        tools:layout="@layout/fragment_password_forget2" />
+    <fragment
+        android:id="@+id/bestMentorListFragment"
+        android:name="com.abit8.geeksmentor.presentation.BestMentorListFragment"
+        android:label="fragment_best_mentor_list"
+        tools:layout="@layout/fragment_best_mentor_list" />
+    <fragment
+        android:id="@+id/mentorListFragment"
+        android:name="com.abit8.geeksmentor.presentation.MentorListFragment"
+        android:label="fragment_mentor_list"
+        tools:layout="@layout/fragment_mentor_list" />
 
 </navigation>

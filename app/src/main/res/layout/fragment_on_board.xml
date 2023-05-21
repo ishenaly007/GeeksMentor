@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.onboard.OnBoardFragment">
+    tools:context=".presentation.onboard.OnBoardFragment">
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewpager"
@@ -36,15 +36,17 @@
         android:textAllCaps="false"
         android:drawableRight="@drawable/arrow_right_black"
         android:paddingLeft="36dp"
-        style="@style/btn_yellow_and_black"
-        />
+        style="@style/btn_yellow_and_black" />
 
+    <!--<com.tbuonomo.viewpagerdotsindicator.DotsIndicator
         app:dotsSize="10dp"
         app:dotsColor="@color/white"
         app:selectedDotColor="@color/white"
         android:layout_marginBottom="48dp"
         android:layout_marginHorizontal="150dp"
         app:dotsSpacing="4dp"
-        android:layout_gravity="bottom|center"/>
-  
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center" />-->
+
 </FrameLayout>
