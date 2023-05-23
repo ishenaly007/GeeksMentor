@@ -118,5 +118,9 @@
     <string name="name">Имя</string>
     <string name="sex">Пол</string>
     <string name="phone_number">Номер телефона</string>
+    <string name="go_to_telegram">Перейти в Telegram</string>
+    <string name="ratings_and_reviews_tv">Оценки и отзывы</string>
+    <string name="rating_mentor">Оцените ментора</string>
+    <string name="sul">Султан Эргешов</string>
 
 </resources>

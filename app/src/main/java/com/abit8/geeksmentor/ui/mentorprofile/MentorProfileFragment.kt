@@ -24,7 +24,7 @@ class MentorProfileFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.btnMentorsProfileNotification.setOnClickListener{
+        binding.btnNotification.setOnClickListener{
             val mentorsNotification = MentorsNotificationFragment()
             val fragmentManager = requireActivity().supportFragmentManager
             val fragmentTransaction = fragmentManager.beginTransaction()
@@ -42,7 +42,7 @@ class MentorProfileFragment : Fragment() {
             fragmentTransaction.commit()
         }
 
-        binding.btnMentorsProfileData.setOnClickListener{
+        binding.btnMyData.setOnClickListener{
             val mentorProfileData = EditMentorProfileFragment()
             val fragmentManager = requireActivity().supportFragmentManager
             val fragmentTransaction = fragmentManager.beginTransaction()
@@ -51,7 +51,7 @@ class MentorProfileFragment : Fragment() {
             fragmentTransaction.commit()
         }
 
-        binding.btnMentorsProfileLanguage.setOnClickListener{
+        binding.btnLanguage.setOnClickListener{
             val language = LanguageFragment()
             val fragmentManager = requireActivity().supportFragmentManager
             val fragmentTransaction = fragmentManager.beginTransaction()

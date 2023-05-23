@@ -57,7 +57,7 @@
         android:textSize="14sp"/>
 
     <RelativeLayout
-        android:id="@+id/btn_russian_language"
+        android:id="@+id/btn_notification"
         android:layout_width="match_parent"
         android:layout_height="20dp"
         app:layout_constraintTop_toBottomOf="@+id/btn_edit_mentor_profile_info"
@@ -85,10 +85,10 @@
     </RelativeLayout>
 
     <RelativeLayout
-        android:id="@+id/btn_kyrgyz_language"
+        android:id="@+id/btn_language"
         android:layout_width="match_parent"
         android:layout_height="20dp"
-        app:layout_constraintTop_toBottomOf="@+id/btn_russian_language"
+        app:layout_constraintTop_toBottomOf="@+id/btn_notification"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="32dp">
 
@@ -112,11 +112,11 @@
     </RelativeLayout>
 
     <RelativeLayout
-        android:id="@+id/btn_english_language"
+        android:id="@+id/btn_my_data"
         android:layout_width="match_parent"
         android:layout_marginTop="32dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_kyrgyz_language"
+        app:layout_constraintTop_toBottomOf="@id/btn_language"
         android:layout_height="20dp">
 
         <TextView
