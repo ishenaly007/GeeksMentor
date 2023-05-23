@@ -35,4 +35,81 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btn_back" />
 
+    <EditText
+        android:id="@+id/et_phone_number_change"
+        style="@style/et_white_and_black"
+        android:layout_width="328dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:hint="@string/phone_number"
+        android:paddingStart="@dimen/mrg_hor_16"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/my_data_tv" />
+
+    <EditText
+        android:id="@+id/et_email_change"
+        style="@style/et_white_and_black"
+        android:layout_width="328dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="@dimen/mrg_hor_16"
+        android:hint="@string/email"
+        android:paddingStart="@dimen/mrg_hor_16"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_phone_number_change" />
+
+    <EditText
+        android:id="@+id/et_sex_change"
+        style="@style/et_white_and_black"
+        android:layout_width="328dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="@dimen/mrg_hor_16"
+        android:hint="@string/sex"
+        android:paddingStart="@dimen/mrg_hor_16"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_email_change" />
+
+    <TextView
+        android:id="@+id/password_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/password"
+        android:textColor="@color/black_new"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_sex_change" />
+
+    <EditText
+        android:id="@+id/et_password_change"
+        style="@style/et_white_and_black"
+        android:layout_width="328dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="@dimen/mrg_hor_16"
+        android:hint="*************"
+        android:paddingStart="@dimen/mrg_hor_16"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/password_tv" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_save_changes"
+        style="@style/btn_yellow_and_black"
+        android:layout_width="328dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="72dp"
+        android:text="@string/save"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

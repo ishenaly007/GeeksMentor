@@ -57,7 +57,7 @@
         app:layout_constraintTop_toBottomOf="@+id/mentors_profile_photo" />
 
     <EditText
-        android:id="@+id/et_name_change"
+        android:id="@+id/et_phone_number_change"
         style="@style/et_white_and_black"
         android:layout_width="328dp"
         android:layout_height="48dp"
@@ -70,7 +70,7 @@
         app:layout_constraintTop_toBottomOf="@id/my_data_tv" />
 
     <EditText
-        android:id="@+id/et_second_name_change"
+        android:id="@+id/et_email_change"
         style="@style/et_white_and_black"
         android:layout_width="328dp"
         android:layout_height="48dp"
@@ -80,10 +80,10 @@
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/et_name_change" />
+        app:layout_constraintTop_toBottomOf="@id/et_phone_number_change" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_skip_board3"
+        android:id="@+id/btn_save_changes"
         style="@style/btn_yellow_and_black"
         android:layout_width="328dp"
         android:layout_height="58dp"

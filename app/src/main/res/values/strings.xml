@@ -116,5 +116,7 @@
     <string name="save">Сохранить</string>
     <string name="second_name">Фамилия</string>
     <string name="name">Имя</string>
+    <string name="sex">Пол</string>
+    <string name="phone_number">Номер телефона</string>
 
 </resources>
