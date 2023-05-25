@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.abit8.geeksmentor.databinding.FragmentSearchBinding
 
+@Suppress("UNREACHABLE_CODE")
 class SearchFragment : Fragment() {
 
     private var _binding: FragmentSearchBinding? = null
@@ -31,6 +32,13 @@ class SearchFragment : Fragment() {
             textView.text = it
         }*/
         return root
+
+        binding.btnDrawer.setOnClickListener {
+           //Logic for navigation drawer
+            binding.navViewSearch.visibility = View.VISIBLE
+            binding.navViewSearch.fitsSystemWindows = false
+
+        }
     }
 
     override fun onDestroyView() {

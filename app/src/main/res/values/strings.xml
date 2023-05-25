@@ -88,4 +88,6 @@
     <string name="all_mentors">Все менторы</string>
     <string name="sultan_ergeshov">Султан Эргешов</string>
     <string name="ux_ui_mentors">Менторы по UX-UI Дизайну</string>
+    <string name="mentors_frontend">🏆 Менторы Frontend</string>
+    <string name="mentors_ux_ui">🏆 Менторы UX-UI</string>
 </resources>

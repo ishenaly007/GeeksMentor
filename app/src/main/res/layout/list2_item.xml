@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView  xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="123dp"
     android:layout_height="145dp"
-    android:layout_margin="16dp">
+    xmlns:tools="http://schemas.android.com/tools">
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/rv2_img"
         android:layout_width="90dp"
@@ -20,58 +20,70 @@
         android:layout_marginTop="98dp"
         />
     <TextView
-        android:id="@+id/rv2_number"
+        android:id="@+id/rv2_person_num"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="27"
-        style="@style/text_16"
-        android:layout_gravity="top"
-        android:layout_marginTop="125dp"
-        android:layout_marginLeft="6.5dp"
-        android:drawableRight="@drawable/users_vector"
+        android:textColor="@color/black_new"
+        android:fontFamily="@font/roboto_regular"
+        android:textStyle="bold"
+        android:textSize="10sp"
+        android:layout_gravity="bottom|left"
+        android:layout_marginLeft="9dp"
+        tools:ignore="RtlHardcoded,SmallSp"
         />
-    <LinearLayout
-        android:id="@+id/rv2_linear"
-        android:layout_width="50dp"
-        android:layout_height="16dp"
-        android:layout_gravity="bottom|right"
-        android:layout_marginRight="6.5dp"
-        >
-        <ImageView
-            android:id="@+id/rv2_star1"
-            android:layout_width="10dp"
-            android:layout_height="10dp"
-            android:src="@drawable/star_vector"
-            android:layout_gravity="center"
-            />
-        <ImageView
-            android:id="@+id/rv2_star2"
-            android:layout_width="10dp"
-            android:layout_height="10dp"
-            android:src="@drawable/star_vector"
-            android:layout_gravity="center"
-            />
-        <ImageView
-            android:id="@+id/rv2_star3"
-            android:layout_width="10dp"
-            android:layout_height="10dp"
-            android:src="@drawable/star_vector"
-            android:layout_gravity="center"
-            />
-        <ImageView
-            android:id="@+id/rv2_star4"
-            android:layout_width="10dp"
-            android:layout_height="10dp"
-            android:src="@drawable/star_vector"
-            android:layout_gravity="center"
-            />
-        <ImageView
-            android:id="@+id/rv2_star5"
-            android:layout_width="10dp"
-            android:layout_height="10dp"
-            android:src="@drawable/star_vector"
-            android:layout_gravity="center"
-            />
+    <TextView
+        android:id="@+id/rv2_person"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:drawableBottom="@drawable/users_vector"
+        android:layout_gravity="bottom|left"
+        android:layout_marginLeft="24dp"
+        android:layout_marginBottom="2dp"
+        tools:ignore="RtlHardcoded,UseCompatTextViewDrawableXml" />
 
-    </LinearLayout>
+    <TextView
+        android:id="@+id/rv2_like_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="14"
+        android:textColor="@color/black_new"
+        android:fontFamily="@font/roboto_regular"
+        android:textStyle="bold"
+        android:textSize="10sp"
+        android:layout_gravity="bottom|left"
+        android:layout_marginLeft="61dp"
+        tools:ignore="RtlHardcoded,SmallSp"
+        />
+    <TextView
+        android:id="@+id/rv2_like"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:drawableBottom="@drawable/like_vector"
+        android:layout_gravity="bottom|left"
+        android:layout_marginLeft="78dp"
+        android:layout_marginBottom="2dp"
+        tools:ignore="RtlHardcoded,UseCompatTextViewDrawableXml" />
+    <TextView
+        android:id="@+id/rv2_dislike_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="13"
+        android:textColor="@color/black_new"
+        android:fontFamily="@font/roboto_regular"
+        android:textStyle="bold"
+        android:textSize="10sp"
+        android:layout_gravity="bottom|left"
+        android:layout_marginLeft="96dp"
+        tools:ignore="RtlHardcoded,SmallSp"
+        />
+    <TextView
+        android:id="@+id/rv2_dislike"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:drawableBottom="@drawable/like_vector"
+        android:layout_gravity="bottom|left"
+        android:layout_marginLeft="112dp"
+        android:layout_marginBottom="2dp"
+        tools:ignore="RtlHardcoded,UseCompatTextViewDrawableXml" />
 </androidx.cardview.widget.CardView>

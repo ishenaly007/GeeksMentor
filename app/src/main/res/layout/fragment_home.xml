@@ -6,120 +6,150 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:fillViewport="true"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <FrameLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/frame_home"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:context=".ui.home.HomeFragment">
 
         <TextView
+            android:id="@+id/tv_home"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             style="@style/text_24_medium"
             android:text="@string/good_day"
             android:layout_marginTop="72dp"
-            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             />
-
-       <ImageView
-           android:id="@+id/arrow_home"
-           android:layout_width="24dp"
-           android:layout_height="24dp"
-           android:src="@drawable/ring_vector"
-           android:layout_gravity="top|right"
-           android:layout_marginTop="74dp"
-           android:layout_marginRight="16dp"
-           />
         
         <EditText
-            android:layout_width="328dp"
+            android:id="@+id/et_search_home"
+            android:layout_width="match_parent"
             android:layout_height="40dp"
             style="@style/et_grey"
             android:hint="@string/searching_mentors"
-            android:layout_gravity="top|center"
-            android:layout_marginTop="124dp"
-            android:paddingLeft="16dp"
-            android:drawableLeft="@drawable/search_vector"
-            />
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_home"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:drawableStart="@drawable/search_vector"
+            android:layout_margin="16dp"
+            android:paddingStart="16dp"
+
+            tools:ignore="Autofill,RtlSymmetry,TextFields" />
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_ux_ui_home"
-            android:layout_width="140dp"
-            android:layout_height="56dp"
+            android:layout_width="160dp"
+            android:layout_height="66dp"
             style="@style/btn_light_grey"
             android:text="@string/ux_ui"
             android:drawableLeft="@drawable/figma_vector"
-            android:layout_gravity="left|top"
-            android:layout_marginLeft="46dp"
-            android:layout_marginTop="180dp"
-            />
+            app:layout_constraintTop_toBottomOf="@+id/et_search_home"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="8dp"
+            android:textSize="14sp"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/black_new"
+            android:textFontWeight="400"
+            tools:ignore="RtlHardcoded,UnusedAttribute" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_frontend_home"
-            android:layout_width="140dp"
-            android:layout_height="56dp"
+            android:layout_width="160dp"
+            android:layout_height="66dp"
             style="@style/btn_light_grey"
             android:text="@string/frontend"
             android:drawableLeft="@drawable/frontend_vector"
-            android:layout_gravity="right|top"
-            android:layout_marginRight="46dp"
-            android:layout_marginTop="180dp"
-            />
+            app:layout_constraintTop_toBottomOf="@+id/et_search_home"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="26dp"
+            android:layout_marginTop="8dp"
+            android:textSize="14sp"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/black_new"
+            android:textFontWeight="400"
+            tools:ignore="RtlHardcoded,UnusedAttribute" />
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_backend_home"
-            android:layout_width="140dp"
-            android:layout_height="56dp"
+            android:layout_width="160dp"
+            android:layout_height="66dp"
             style="@style/btn_light_grey"
             android:text="@string/backend"
             android:drawableLeft="@drawable/backend_vector"
-            android:layout_gravity="left|top"
-            android:layout_marginLeft="46dp"
-            android:layout_marginTop="234dp"
-            />
+            app:layout_constraintTop_toBottomOf="@+id/btn_ux_ui_home"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="8dp"
+            android:textSize="14sp"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/black_new"
+            android:textFontWeight="400"
+            tools:ignore="RtlHardcoded,UnusedAttribute" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_android_home"
-            android:layout_width="140dp"
-            android:layout_height="56dp"
+            android:layout_width="160dp"
+            android:layout_height="66dp"
             style="@style/btn_light_grey"
             android:text="@string/android"
             android:drawableLeft="@drawable/kotlin"
-            android:layout_gravity="right|top"
-            android:layout_marginRight="46dp"
-            android:layout_marginTop="234dp"
-            />
+            app:layout_constraintTop_toBottomOf="@+id/btn_frontend_home"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="26dp"
+            android:layout_marginTop="8dp"
+            android:textSize="14sp"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/black_new"
+            android:textFontWeight="400"
+            tools:ignore="RtlHardcoded,UnusedAttribute" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_technical_home"
-            android:layout_width="140dp"
-            android:layout_height="56dp"
+            android:layout_width="160dp"
+            android:layout_height="66dp"
             style="@style/btn_light_grey"
             android:text="@string/technical_mentors"
             android:drawableLeft="@drawable/chip_vector"
-            android:layout_gravity="left|top"
-            android:layout_marginLeft="46dp"
-            android:layout_marginTop="296dp"
-            />
+            app:layout_constraintTop_toBottomOf="@+id/btn_backend_home"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="8dp"
+            android:textSize="13sp"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/black_new"
+            android:textFontWeight="400"
+            tools:ignore="RtlHardcoded,UnusedAttribute" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_admins_home"
-            android:layout_width="140dp"
-            android:layout_height="56dp"
+            android:layout_width="160dp"
+            android:layout_height="66dp"
             style="@style/btn_light_grey"
             android:text="@string/admins"
             android:drawableLeft="@drawable/user_vector"
-            android:layout_gravity="right|top"
-            android:layout_marginRight="46dp"
-            android:layout_marginTop="296dp"
-            />
+            app:layout_constraintTop_toBottomOf="@+id/btn_android_home"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="26dp"
+            android:layout_marginTop="8dp"
+            android:textSize="14sp"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/black_new"
+            android:textFontWeight="400"
+            tools:ignore="RtlHardcoded,UnusedAttribute" />
 
         <TextView
             android:id="@+id/tv_mentors_of_month"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/mentors_of_month"
+            app:layout_constraintTop_toBottomOf="@+id/btn_admins_home"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="25dp"
             style="@style/text_14"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="366dp"
             />
 
         <TextView
@@ -128,19 +158,24 @@
             android:layout_height="wrap_content"
             android:text="@string/all_mentors"
             style="@style/text_14"
-            android:drawableRight="@drawable/line_right_black"
-            android:layout_gravity="right"
-            android:layout_marginTop="369dp"
-            android:layout_marginRight="16dp"
+            android:drawableEnd="@drawable/line_right_black"
+            app:layout_constraintTop_toBottomOf="@+id/btn_admins_home"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="25dp"
             />
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv1_main"
             android:layout_width="match_parent"
             android:layout_height="145dp"
-            android:layout_marginTop="412dp"
             tools:listitem="@layout/list1_item"
             android:orientation="horizontal"
             android:scrollbars="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/tv_mentors_of_month"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="16dp"
             />
         <TextView
             android:id="@+id/tv_ux_ui_mentors"
@@ -148,8 +183,10 @@
             android:layout_height="wrap_content"
             android:text="@string/ux_ui_mentors"
             style="@style/text_14"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="589dp"
+            app:layout_constraintTop_toBottomOf="@+id/rv1_main"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="31dp"
             />
         <TextView
             android:id="@+id/tv_all_mentors2"
@@ -157,20 +194,25 @@
             android:layout_height="wrap_content"
             android:text="@string/all_mentors"
             style="@style/text_14"
-            android:drawableRight="@drawable/line_right_black"
-            android:layout_gravity="right"
-            android:layout_marginTop="592dp"
-            android:layout_marginRight="16dp"
-            />
+            android:drawableEnd="@drawable/line_right_black"
+            app:layout_constraintTop_toBottomOf="@+id/rv1_main"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="31dp"
+            tools:ignore="UseCompatTextViewDrawableXml" />
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv2_main"
             android:layout_width="match_parent"
             android:layout_height="145dp"
-            android:layout_marginTop="635dp"
             tools:listitem="@layout/list2_item"
             android:orientation="horizontal"
             android:scrollbars="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/tv_all_mentors2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="16dp"
             android:layout_marginBottom="100dp"
             />
-    </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
