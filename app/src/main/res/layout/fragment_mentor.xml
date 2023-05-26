@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="@dimen/mrg_hor_16"
@@ -104,5 +105,101 @@
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/stars_rating_bar" />
+
+    <TextView
+        android:id="@+id/average_rating"
+        android:layout_width="55dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="32.5dp"
+        android:layout_marginStart="@dimen/mrg_hor_16"
+        app:layout_constraintStart_toStartOf="parent"
+        android:fontFamily="@font/roboto_medium"
+        android:textSize="40sp"
+        android:textColor="@color/black_new"
+        android:text="4,8"
+        app:layout_constraintTop_toBottomOf="@+id/ratings_and_reviews" />
+
+    <view
+        android:id="@+id/average_stars"
+        class="androidx.appcompat.app.AlertController$RecycleListView"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/mrg_hor_16"
+        android:layout_marginTop="32.5dp"
+        app:layout_constraintEnd_toEndOf="@+id/average_rating"
+        app:layout_constraintStart_toStartOf="@+id/average_rating"
+        app:layout_constraintTop_toBottomOf="@+id/average_rating">
+
+    </view>
+
+    <TextView
+        android:id="@+id/how_many"
+        android:layout_width="38dp"
+        android:layout_height="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/average_rating"
+        app:layout_constraintStart_toStartOf="@+id/average_rating"
+        app:layout_constraintTop_toBottomOf="@+id/average_stars"
+        android:layout_marginTop="6dp"
+        android:drawableLeft="@drawable/users"
+        android:text="27"
+        android:fontFamily="@font/roboto_medium"
+        android:textSize="14sp"
+        android:textColor="@color/black_new"
+        android:drawablePadding="6dp"/>
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginEnd="@dimen/mrg_hor_16"-->
+<!--        android:fontFamily="@font/roboto_regular"-->
+<!--        android:text="5"-->
+<!--        android:textColor="@color/black_new"-->
+<!--        android:textSize="14sp"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/horizontal_progress_bar_5_stars"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+    <ProgressBar
+        android:id="@+id/horizontal_progress_bar_5_stars"
+        style="@android:style/Widget.Holo.Light.ProgressBar.Horizontal"
+        android:layout_width="200dp"
+        android:layout_height="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ratings_and_reviews"
+        android:layout_marginTop="30dp"/>
+
+    <ProgressBar
+        android:id="@+id/horizontal_progress_bar_4_stars"
+        style="@android:style/Widget.Holo.Light.ProgressBar.Horizontal"
+        android:layout_width="200dp"
+        android:layout_height="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/horizontal_progress_bar_5_stars"
+        android:layout_marginTop="12dp"/>
+
+    <ProgressBar
+        android:id="@+id/horizontal_progress_bar_3_stars"
+        style="@android:style/Widget.Holo.Light.ProgressBar.Horizontal"
+        android:layout_width="200dp"
+        android:layout_height="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/horizontal_progress_bar_4_stars"
+        android:layout_marginTop="12dp"/>
+
+    <ProgressBar
+        android:id="@+id/horizontal_progress_bar_2_stars"
+        style="@android:style/Widget.Holo.Light.ProgressBar.Horizontal"
+        android:layout_width="200dp"
+        android:layout_height="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/horizontal_progress_bar_3_stars"
+        android:layout_marginTop="12dp"/>
+
+    <ProgressBar
+        android:id="@+id/horizontal_progress_bar_1_stars"
+        style="@android:style/Widget.Holo.Light.ProgressBar.Horizontal"
+        android:layout_width="200dp"
+        android:layout_height="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/horizontal_progress_bar_2_stars"
+        android:layout_marginTop="12dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
