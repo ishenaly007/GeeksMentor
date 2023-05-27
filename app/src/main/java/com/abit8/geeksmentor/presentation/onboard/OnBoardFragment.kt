@@ -27,20 +27,23 @@ class OnBoardFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val adapter = OnBoardAdapter(viewPager, onClick = {navigateToHomeFragment()}, onLoginClickListener = { navigateToLoginFragment() }, onRegisterClickListener = { navigateToRegisterFragment() })
+        val adapter = OnBoardAdapter(viewPager,
+            onClick = { navigateToHomeFragment() },
+            onLoginClickListener = { navigateToLoginFragment() },
+            onRegisterClickListener = { navigateToRegisterFragment() })
         binding.viewpager.adapter = adapter
         binding.dotsIndicator.attachTo(binding.viewpager)
     }
 
-    private fun navigateToHomeFragment(){
+    private fun navigateToHomeFragment() {
         findNavController().navigateUp()
     }
 
     private fun navigateToLoginFragment() {
-        findNavController().navigate(R.id.logInFragment)
+        findNavController().navigate(R.id.signInFragment)
     }
 
     private fun navigateToRegisterFragment() {
-        findNavController().navigate(R.id.signInFragment)
+        findNavController().navigate(R.id.logInFragment)
     }
 }
