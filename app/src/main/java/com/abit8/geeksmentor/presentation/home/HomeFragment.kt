@@ -10,6 +10,8 @@ import android.widget.TextView
 import androidx.core.content.ContextCompat.registerReceiver
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
+import com.abit8.geeksmentor.R
 import com.abit8.geeksmentor.databinding.FragmentHomeBinding
 import com.abit8.geeksmentor.utils.NetworkChangeListener
 
@@ -41,6 +43,22 @@ class HomeFragment : Fragment() {
              textView.text = it
          }*/
         return root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        initClicks()
+    }
+
+    private fun initClicks() {
+        binding.apply {
+            tvMentorsOfMonth.setOnClickListener {
+                findNavController().navigate(R.id.bestMentorListFragment)
+            }
+            tvAllMentors.setOnClickListener {
+                findNavController().navigate(R.id.mentorListFragment)
+            }
+        }
     }
 
     override fun onDestroyView() {

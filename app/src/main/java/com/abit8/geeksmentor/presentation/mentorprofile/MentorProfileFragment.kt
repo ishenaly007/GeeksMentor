@@ -5,7 +5,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.abit8.geeksmentor.R
+import com.abit8.geeksmentor.SplashActivity
 import com.abit8.geeksmentor.databinding.FragmentMentorProfileBinding
 
 class MentorProfileFragment : Fragment() {
@@ -24,44 +26,26 @@ class MentorProfileFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.btnMentorsProfileNotification.setOnClickListener{
-            val mentorsNotification = MentorsNotificationFragment()
-            val fragmentManager = requireActivity().supportFragmentManager
-            val fragmentTransaction = fragmentManager.beginTransaction()
-            fragmentTransaction.replace(R.id.mentors_notification_fragment, mentorsNotification)
-            fragmentTransaction.addToBackStack(null)
-            fragmentTransaction.commit()
+        binding.btnMentorsProfileNotification.setOnClickListener {
+            findNavController().navigate(R.id.mentors_notification_fragment)
         }
 
-        binding.btnEditMentorProfileInfo.setOnClickListener{
-            val editMentorProfile = EditMentorProfileFragment()
-            val fragmentManager = requireActivity().supportFragmentManager
-            val fragmentTransaction = fragmentManager.beginTransaction()
-            fragmentTransaction.replace(R.id.edit_mentor_profile_info_fragment, editMentorProfile)
-            fragmentTransaction.addToBackStack(null)
-            fragmentTransaction.commit()
+        binding.btnEditMentorProfileInfo.setOnClickListener {
+            findNavController().navigate(R.id.edit_mentor_profile_info_fragment)
         }
 
-        binding.btnMentorsProfileData.setOnClickListener{
-            val mentorProfileData = EditMentorProfileFragment()
-            val fragmentManager = requireActivity().supportFragmentManager
-            val fragmentTransaction = fragmentManager.beginTransaction()
-            fragmentTransaction.replace(R.id.mentors_profile_data_fragment, mentorProfileData)
-            fragmentTransaction.addToBackStack(null)
-            fragmentTransaction.commit()
+        binding.btnMentorsProfileData.setOnClickListener {
+            findNavController().navigate(R.id.mentors_profile_data_fragment)
         }
 
-        binding.btnMentorsProfileLanguage.setOnClickListener{
-            val language = LanguageFragment()
-            val fragmentManager = requireActivity().supportFragmentManager
-            val fragmentTransaction = fragmentManager.beginTransaction()
-            fragmentTransaction.replace(R.id.mentors_profile_language_fragment, language)
-            fragmentTransaction.addToBackStack(null)
-            fragmentTransaction.commit()
+        binding.btnMentorsProfileLanguage.setOnClickListener {
+            findNavController().navigate(R.id.mentors_profile_language_fragment)
         }
 
-        binding.btnExitMentorProfile.setOnClickListener{
-        //показать кастомизированный алерт диалог с проверкой на желание выйти
+        binding.btnExitMentorProfile.setOnClickListener {
+            //показать кастомизированный алерт диалог с проверкой на желание выйти
+            requireActivity().finish()
+            SplashActivity().finish()
         }
     }
 }
