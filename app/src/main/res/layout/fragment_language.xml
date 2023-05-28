@@ -49,7 +49,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/right_arrow"
-            android:layout_marginStart="340dp"
+            android:layout_marginStart="365dp"
             android:layout_marginTop="3dp"/>
 
     </RelativeLayout>
@@ -81,40 +81,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/right_arrow"
-            android:layout_marginStart="340dp"
+            android:layout_marginStart="365dp"
             android:layout_marginTop="3dp"/>
 
     </RelativeLayout>
 
-    <RelativeLayout
-        android:id="@+id/btn_english_language"
-        android:layout_width="match_parent"
-        android:layout_marginTop="32dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_kyrgyz_language"
-        android:layout_height="20dp">
 
-        <ImageView
-        android:layout_width="23dp"
-        android:layout_height="23dp"
-        android:src="@drawable/england_flag"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="20dp"
-            app:layout_constraintStart_toStartOf="parent"
-            android:text="@string/english"
-            android:textSize="16sp"
-            android:layout_marginStart="38dp"
-            android:fontFamily="@font/roboto_regular"
-            android:textColor="@color/black_new" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/right_arrow"
-            android:layout_marginStart="340dp"
-            android:layout_marginTop="3dp"/>
-    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
