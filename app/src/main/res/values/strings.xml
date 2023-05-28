@@ -110,5 +110,17 @@
     <string name="sultan_ergeshov">Султан Эргешов</string>
     <string name="ux_ui_mentors">Менторы по UX-UI Дизайну</string>
     <string name="back">Назад</string>
+    <string name="english">English</string>
+    <string name="kyrgyz">Кыргызча</string>
+    <string name="russian">Русский</string>
+    <string name="save">Сохранить</string>
+    <string name="second_name">Фамилия</string>
+    <string name="name">Имя</string>
+    <string name="sex">Пол</string>
+    <string name="phone_number">Номер телефона</string>
+    <string name="go_to_telegram">Перейти в Telegram</string>
+    <string name="ratings_and_reviews_tv">Оценки и отзывы</string>
+    <string name="rating_mentor">Оцените ментора</string>
+    <string name="sul">Султан Эргешов</string>
 
 </resources>
