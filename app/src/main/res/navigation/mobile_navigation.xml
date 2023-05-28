@@ -60,7 +60,7 @@
         android:id="@+id/editMentorProfileFragment"
         android:name="com.abit8.geeksmentor.ui.mentorprofile.EditMentorProfileFragment"
         android:label="fragment_edit_mentors_profile"
-        tools:layout="@layout/fragment_edit_mentors_profile" />
+        tools:layout="@layout/fragment_edit_profile" />
     <fragment
         android:id="@+id/languageFragment"
         android:name="com.abit8.geeksmentor.ui.mentorprofile.LanguageFragment"
@@ -70,7 +70,7 @@
         android:id="@+id/mentorsDataFragment"
         android:name="com.abit8.geeksmentor.ui.mentorprofile.MentorsDataFragment"
         android:label="fragment_mentors_data"
-        tools:layout="@layout/fragment_mentors_data" />
+        tools:layout="@layout/fragment_data" />
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.abit8.geeksmentor.ui.mentorprofile.ProfileFragment"

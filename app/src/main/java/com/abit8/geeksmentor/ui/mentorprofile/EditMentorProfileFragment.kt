@@ -28,7 +28,7 @@ class EditMentorProfileFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_edit_mentors_profile, container, false)
+        return inflater.inflate(R.layout.fragment_edit_profile, container, false)
     }
 
     companion object {

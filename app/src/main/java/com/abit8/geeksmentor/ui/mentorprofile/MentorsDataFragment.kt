@@ -28,7 +28,7 @@ class MentorsDataFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_mentors_data, container, false)
+        return inflater.inflate(R.layout.fragment_data, container, false)
     }
 
     companion object {
