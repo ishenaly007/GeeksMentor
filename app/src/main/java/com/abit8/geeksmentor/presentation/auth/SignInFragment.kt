@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.abit8.geeksmentor.R
 import com.abit8.geeksmentor.databinding.FragmentSignInBinding
 
@@ -20,6 +21,20 @@ class SignInFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        initClicks()
+    }
 
+    private fun initClicks() {
+        binding.apply {
+            tvForgotPassword.setOnClickListener {
+                findNavController().navigate(R.id.passwordForgetFragment)
+            }
+            btnEnterMain.setOnClickListener {
+                findNavController().navigate(R.id.navigation_home)
+            }
+            tvRegisterAccount.setOnClickListener {
+                findNavController().navigate(R.id.logInFragment)
+            }
+        }
     }
 }

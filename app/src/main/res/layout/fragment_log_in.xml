@@ -89,6 +89,7 @@
         style="@style/btn_black_and_yellow"
         />
     <TextView
+        android:id="@+id/go_to_sign_in_fragment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/have_account_enter"

@@ -66,5 +66,30 @@
         android:name="com.abit8.geeksmentor.presentation.MentorListFragment"
         android:label="fragment_mentor_list"
         tools:layout="@layout/fragment_mentor_list" />
+    <fragment
+        android:id="@+id/registrationinProcessFragment"
+        android:name="com.abit8.geeksmentor.presentation.regitrationinprcess.RegistrationinProcessFragment"
+        android:label="fragment_registrationin_process"
+        tools:layout="@layout/fragment_registrationin_process" />
+    <fragment
+        android:id="@+id/editMentorProfileFragment"
+        android:name="com.abit8.geeksmentor.presentation.mentorprofile.EditMentorProfileFragment"
+        android:label="fragment_edit_mentors_profile"
+        tools:layout="@layout/fragment_edit_mentors_profile" />
+    <fragment
+        android:id="@+id/languageFragment"
+        android:name="com.abit8.geeksmentor.presentation.mentorprofile.LanguageFragment"
+        android:label="fragment_language"
+        tools:layout="@layout/fragment_language" />
+    <fragment
+        android:id="@+id/mentorsDataFragment"
+        android:name="com.abit8.geeksmentor.presentation.mentorprofile.MentorsDataFragment"
+        android:label="fragment_mentors_data"
+        tools:layout="@layout/fragment_mentors_data" />
+    <fragment
+        android:id="@+id/mentorsNotificationFragment"
+        android:name="com.abit8.geeksmentor.presentation.mentorprofile.MentorsNotificationFragment"
+        android:label="fragment_mentors_notification"
+        tools:layout="@layout/fragment_mentors_notification" />
 
 </navigation>
