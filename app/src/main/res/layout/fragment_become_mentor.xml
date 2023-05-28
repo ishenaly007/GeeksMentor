@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/become_mentor_fragment"
-    tools:context=".ui.mentorprofile.BecomeMentorFragment">
+    tools:context=".ui.profile.BecomeMentorFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
