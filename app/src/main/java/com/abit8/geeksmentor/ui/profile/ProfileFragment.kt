@@ -5,37 +5,38 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
+import com.abit8.geeksmentor.R
 import com.abit8.geeksmentor.databinding.FragmentProfileBinding
 
 class ProfileFragment : Fragment() {
 
-    private var _binding: FragmentProfileBinding? = null
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
-    private val binding get() = _binding!!
+    private lateinit var binding: FragmentProfileBinding
+    val navController = findNavController()
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-
-        _binding = FragmentProfileBinding.inflate(inflater, container, false)
-        val root: View = binding.root
-
-        /*val profileViewModel =
-            ViewModelProvider(this).get(ProfileViewModel::class.java)
-
-        val textView: TextView = binding.textNotifications
-        profileViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }*/
-        return root
+        binding = FragmentProfileBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.btnLanguage.setOnClickListener {
+            navController.navigate(R.id.mentors_profile_language_fragment)
+        }
+        binding.btnMyData.setOnClickListener {
+            navController.navigate(R.id.profile_data_fragment)
+        }
+        binding.btnBecomeMentor.setOnClickListener {
+            navController.navigate(R.id.become_mentor_fragment)
+        }
+        binding.btnEditMentorProfileInfo.setOnClickListener {
+            navController.navigate(R.id.edit_profile_info_fragment)
+        }
     }
 }

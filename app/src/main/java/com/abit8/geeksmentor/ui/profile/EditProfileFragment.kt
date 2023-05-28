@@ -1,4 +1,4 @@
-package com.abit8.geeksmentor.ui.mentorprofile
+package com.abit8.geeksmentor.ui.profile
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,10 +9,10 @@ import com.abit8.geeksmentor.R
 
 /**
  * A simple [Fragment] subclass.
- * Use the [EditMentorProfileFragment.newInstance] factory method to
+ * Use the [EditProfileFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class EditMentorProfileFragment : Fragment() {
+class EditProfileFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -38,12 +38,12 @@ class EditMentorProfileFragment : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment EditMentorProfileFragment.
+         * @return A new instance of fragment EditProfileFragment.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            EditMentorProfileFragment().apply {
+            EditProfileFragment().apply {
                 arguments = Bundle().apply {
                 }
             }

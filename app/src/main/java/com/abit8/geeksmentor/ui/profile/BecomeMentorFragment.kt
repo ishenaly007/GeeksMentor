@@ -1,4 +1,4 @@
-package com.abit8.geeksmentor.ui.mentorprofile
+package com.abit8.geeksmentor.ui.profile
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,10 +9,10 @@ import com.abit8.geeksmentor.R
 
 /**
  * A simple [Fragment] subclass.
- * Use the [MentorsDataFragment.newInstance] factory method to
+ * Use the [BecomeMentorFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class MentorsDataFragment : Fragment() {
+class BecomeMentorFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -28,7 +28,7 @@ class MentorsDataFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_data, container, false)
+        return inflater.inflate(R.layout.fragment_become_mentor, container, false)
     }
 
     companion object {
@@ -38,12 +38,12 @@ class MentorsDataFragment : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment MentorsDataFragment.
+         * @return A new instance of fragment BecomeMentorFragment.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            MentorsDataFragment().apply {
+            BecomeMentorFragment().apply {
                 arguments = Bundle().apply {
                 }
             }

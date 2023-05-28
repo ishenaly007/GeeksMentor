@@ -53,27 +53,27 @@
         tools:layout="@layout/fragment_password_forget2" />
     <fragment
         android:id="@+id/becomeMentorFragment"
-        android:name="com.abit8.geeksmentor.ui.mentorprofile.BecomeMentorFragment"
+        android:name="com.abit8.geeksmentor.ui.profile.BecomeMentorFragment"
         android:label="fragment_become_mentor"
         tools:layout="@layout/fragment_become_mentor" />
     <fragment
         android:id="@+id/editMentorProfileFragment"
-        android:name="com.abit8.geeksmentor.ui.mentorprofile.EditMentorProfileFragment"
+        android:name="com.abit8.geeksmentor.ui.profile.EditProfileFragment"
         android:label="fragment_edit_mentors_profile"
         tools:layout="@layout/fragment_edit_profile" />
     <fragment
         android:id="@+id/languageFragment"
-        android:name="com.abit8.geeksmentor.ui.mentorprofile.LanguageFragment"
+        android:name="com.abit8.geeksmentor.ui.profile.LanguageFragment"
         android:label="fragment_language"
         tools:layout="@layout/fragment_language" />
     <fragment
         android:id="@+id/mentorsDataFragment"
-        android:name="com.abit8.geeksmentor.ui.mentorprofile.MentorsDataFragment"
+        android:name="com.abit8.geeksmentor.ui.profile.DataFragment"
         android:label="fragment_mentors_data"
         tools:layout="@layout/fragment_data" />
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.abit8.geeksmentor.ui.mentorprofile.ProfileFragment"
+        android:name="com.abit8.geeksmentor.ui.profile.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" >
         <action

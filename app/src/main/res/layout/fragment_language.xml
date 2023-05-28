@@ -6,7 +6,7 @@
     android:layout_margin="@dimen/mrg_hor_16"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/mentors_profile_language_fragment"
-    tools:context=".ui.mentorprofile.LanguageFragment">
+    tools:context=".ui.profile.LanguageFragment">
 
     <TextView
         android:id="@+id/btn_back"
