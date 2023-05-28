@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@id/navigation_home">
 
     <fragment
         android:id="@+id/navigation_home"
@@ -26,7 +26,7 @@
         android:id="@+id/onBoardFragment"
         android:name="com.abit8.geeksmentor.ui.onboard.OnBoardFragment"
         android:label="fragment_on_board"
-        tools:layout="@layout/fragment_on_board" >
+        tools:layout="@layout/fragment_on_board">
         <action
             android:id="@+id/action_onBoardFragment_to_navigation_home"
             app:destination="@id/navigation_home" />
@@ -48,8 +48,46 @@
         tools:layout="@layout/fragment_sign_in" />
     <fragment
         android:id="@+id/mentorProfileFragment"
-        android:name="com.abit8.geeksmentor.ui.mentorprofile.MentorProfileFragment"
+        android:name="com.abit8.geeksmentor.ui.mentorprofile.ProfileFragment"
         android:label="fragment_mentor_profile"
-        tools:layout="@layout/fragment_mentor_profile" />
+        tools:layout="@layout/fragmen_profile">
+        <action
+            android:id="@+id/action_mentorProfileFragment_to_languageFragment"
+            app:destination="@id/languageFragment" />
+        <action
+            android:id="@+id/action_mentorProfileFragment_to_mentorsDataFragment"
+            app:destination="@id/mentorsDataFragment" />
+        <action
+            android:id="@+id/action_mentorProfileFragment_to_editMentorProfileFragment"
+            app:destination="@id/editMentorProfileFragment" />
+        <action
+            android:id="@+id/action_mentorProfileFragment_to_mentorsNotificationFragment"
+            app:destination="@id/mentorsNotificationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/languageFragment"
+        android:name="com.abit8.geeksmentor.ui.mentorprofile.LanguageFragment"
+        android:label="fragment_language"
+        tools:layout="@layout/fragment_language" />
+    <fragment
+        android:id="@+id/editMentorProfileFragment"
+        android:name="com.abit8.geeksmentor.ui.mentorprofile.EditMentorProfileFragment"
+        android:label="fragment_edit_mentors_profile"
+        tools:layout="@layout/fragment_edit_mentors_profile" />
+    <fragment
+        android:id="@+id/mentorsDataFragment"
+        android:name="com.abit8.geeksmentor.ui.mentorprofile.MentorsDataFragment"
+        android:label="fragment_mentors_data"
+        tools:layout="@layout/fragment_mentors_data" />
+    <fragment
+        android:id="@+id/passwordForgetFragment2"
+        android:name="com.abit8.geeksmentor.ui.auth.PasswordForgetFragment2"
+        android:label="fragment_password_forget2"
+        tools:layout="@layout/fragment_password_forget2" />
+    <fragment
+        android:id="@+id/mentorsNotificationFragment"
+        android:name="com.abit8.geeksmentor.ui.mentorprofile.MentorsNotificationFragment"
+        android:label="fragment_mentors_notification"
+        tools:layout="@layout/fragment_mentors_notification" />
 
 </navigation>

@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment
 import com.abit8.geeksmentor.R
 import com.abit8.geeksmentor.databinding.FragmentMentorProfileBinding
 
-class MentorProfileFragment : Fragment() {
+class ProfileFragment : Fragment() {
 
     private lateinit var binding: FragmentMentorProfileBinding
 
