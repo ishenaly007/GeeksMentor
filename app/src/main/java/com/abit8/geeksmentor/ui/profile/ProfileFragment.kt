@@ -26,17 +26,17 @@ class ProfileFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.btnLanguage.setOnClickListener {
-            navController.navigate(R.id.mentors_profile_language_fragment)
-        }
-        binding.btnMyData.setOnClickListener {
-            navController.navigate(R.id.profile_data_fragment)
-        }
-        binding.btnBecomeMentor.setOnClickListener {
-            navController.navigate(R.id.become_mentor_fragment)
-        }
-        binding.btnEditMentorProfileInfo.setOnClickListener {
-            navController.navigate(R.id.edit_profile_info_fragment)
-        }
+//        binding.btnLanguage.setOnClickListener {
+//            navController.navigate(R.id.mentors_profile_language_fragment)
+//        }
+//        binding.btnMyData.setOnClickListener {
+//            navController.navigate(R.id.profile_data_fragment)
+//        }
+//        binding.btnBecomeMentor.setOnClickListener {
+//            navController.navigate(R.id.become_mentor_fragment)
+//        }
+//        binding.btnEditMentorProfileInfo.setOnClickListener {
+//            navController.navigate(R.id.edit_profile_info_fragment)
+//        }
     }
 }
