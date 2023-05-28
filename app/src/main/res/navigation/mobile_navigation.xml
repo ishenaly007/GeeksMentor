@@ -20,7 +20,7 @@
     <fragment
         android:id="@+id/navigation_profile"
         android:name="com.abit8.geeksmentor.ui.profile.ProfileFragment"
-        android:label="@string/title_notifications"
+        android:label="@string/title_profile"
         tools:layout="@layout/fragment_profile" />
     <fragment
         android:id="@+id/onBoardFragment"
@@ -47,47 +47,47 @@
         android:label="fragment_sign_in"
         tools:layout="@layout/fragment_sign_in" />
     <fragment
-        android:id="@+id/mentorProfileFragment"
-        android:name="com.abit8.geeksmentor.ui.mentorprofile.ProfileFragment"
-        android:label="fragment_mentor_profile"
-        tools:layout="@layout/fragmen_profile">
-        <action
-            android:id="@+id/action_mentorProfileFragment_to_languageFragment"
-            app:destination="@id/languageFragment" />
-        <action
-            android:id="@+id/action_mentorProfileFragment_to_mentorsDataFragment"
-            app:destination="@id/mentorsDataFragment" />
-        <action
-            android:id="@+id/action_mentorProfileFragment_to_editMentorProfileFragment"
-            app:destination="@id/editMentorProfileFragment" />
-        <action
-            android:id="@+id/action_mentorProfileFragment_to_mentorsNotificationFragment"
-            app:destination="@id/mentorsNotificationFragment" />
-    </fragment>
+        android:id="@+id/passwordForgetFragment2"
+        android:name="com.abit8.geeksmentor.ui.auth.PasswordForgetFragment2"
+        android:label="fragment_password_forget2"
+        tools:layout="@layout/fragment_password_forget2" />
     <fragment
-        android:id="@+id/languageFragment"
-        android:name="com.abit8.geeksmentor.ui.mentorprofile.LanguageFragment"
-        android:label="fragment_language"
-        tools:layout="@layout/fragment_language" />
+        android:id="@+id/becomeMentorFragment"
+        android:name="com.abit8.geeksmentor.ui.mentorprofile.BecomeMentorFragment"
+        android:label="fragment_become_mentor"
+        tools:layout="@layout/fragment_become_mentor" />
     <fragment
         android:id="@+id/editMentorProfileFragment"
         android:name="com.abit8.geeksmentor.ui.mentorprofile.EditMentorProfileFragment"
         android:label="fragment_edit_mentors_profile"
         tools:layout="@layout/fragment_edit_mentors_profile" />
     <fragment
+        android:id="@+id/languageFragment"
+        android:name="com.abit8.geeksmentor.ui.mentorprofile.LanguageFragment"
+        android:label="fragment_language"
+        tools:layout="@layout/fragment_language" />
+    <fragment
         android:id="@+id/mentorsDataFragment"
         android:name="com.abit8.geeksmentor.ui.mentorprofile.MentorsDataFragment"
         android:label="fragment_mentors_data"
         tools:layout="@layout/fragment_mentors_data" />
     <fragment
-        android:id="@+id/passwordForgetFragment2"
-        android:name="com.abit8.geeksmentor.ui.auth.PasswordForgetFragment2"
-        android:label="fragment_password_forget2"
-        tools:layout="@layout/fragment_password_forget2" />
-    <fragment
-        android:id="@+id/mentorsNotificationFragment"
-        android:name="com.abit8.geeksmentor.ui.mentorprofile.MentorsNotificationFragment"
-        android:label="fragment_mentors_notification"
-        tools:layout="@layout/fragment_mentors_notification" />
+        android:id="@+id/profileFragment"
+        android:name="com.abit8.geeksmentor.ui.mentorprofile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_mentorsDataFragment"
+            app:destination="@id/mentorsDataFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_editMentorProfileFragment"
+            app:destination="@id/editMentorProfileFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_languageFragment"
+            app:destination="@id/languageFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_becomeMentorFragment"
+            app:destination="@id/becomeMentorFragment" />
+    </fragment>
 
 </navigation>
