@@ -8,108 +8,81 @@
     android:layout_margin="@dimen/mrg_hor_16"
     tools:context=".ui.profile.DataFragment">
 
-    <TextView
+    <ImageView
         android:id="@+id/btn_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:drawablePadding="8dp"
-        android:fontFamily="@font/roboto_regular"
-        android:text="@string/back"
-        android:textColor="@color/black_new"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:drawableLeftCompat="@drawable/left_arrow"
+        android:src="@drawable/back_arrow"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/my_data_tv"
         android:layout_width="wrap_content"
-        android:layout_height="20dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="35dp"
         android:fontFamily="@font/roboto_medium"
         android:text="@string/my_data"
         android:textColor="@color/black_new"
-        android:textSize="16sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btn_back" />
 
     <EditText
-        android:id="@+id/et_phone_number_change"
+        android:id="@+id/et_mail_change"
         style="@style/et_white_and_black"
-        android:layout_width="328dp"
+        android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_marginTop="24dp"
-        android:hint="@string/phone_number"
+        android:text="@string/example_gmail_com"
+        android:textColor="@color/black_new"
+        android:paddingEnd="10dp"
         android:paddingStart="@dimen/mrg_hor_16"
+        android:backgroundTint="#F5F6F6"
+        android:drawableLeft="@drawable/mail_icon"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/my_data_tv" />
 
-    <EditText
-        android:id="@+id/et_email_change"
-        style="@style/et_white_and_black"
-        android:layout_width="328dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="@dimen/mrg_hor_16"
-        android:hint="@string/email"
-        android:paddingStart="@dimen/mrg_hor_16"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/et_phone_number_change" />
-
-    <EditText
-        android:id="@+id/et_sex_change"
-        style="@style/et_white_and_black"
-        android:layout_width="328dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="@dimen/mrg_hor_16"
-        android:hint="@string/sex"
-        android:paddingStart="@dimen/mrg_hor_16"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/et_email_change" />
-
     <TextView
-        android:id="@+id/password_tv"
         android:layout_width="wrap_content"
-        android:layout_height="20dp"
-        android:layout_marginTop="35dp"
-        android:fontFamily="@font/roboto_medium"
-        android:text="@string/password"
+        android:layout_height="wrap_content"
+        android:text="@string/change_mail"
         android:textColor="@color/black_new"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/et_sex_change" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/roboto_regular"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@+id/et_mail_change" />
 
     <EditText
         android:id="@+id/et_password_change"
         style="@style/et_white_and_black"
-        android:layout_width="328dp"
+        android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:layout_marginTop="@dimen/mrg_hor_16"
-        android:hint="*************"
+        android:layout_marginTop="50dp"
+        android:text="@string/example_gmail_com"
+        android:textColor="@color/black_new"
+        android:paddingEnd="10dp"
         android:paddingStart="@dimen/mrg_hor_16"
+        android:backgroundTint="#F5F6F6"
+        android:drawableLeft="@drawable/lock"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/password_tv" />
+        app:layout_constraintTop_toBottomOf="@id/et_mail_change" />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_save_changes"
-        style="@style/btn_yellow_and_black"
-        android:layout_width="328dp"
-        android:layout_height="58dp"
-        android:layout_marginBottom="72dp"
-        android:text="@string/save"
-        app:cornerRadius="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/change_password"
+        android:textColor="@color/black_new"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/roboto_regular"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@+id/et_password_change" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
