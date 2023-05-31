@@ -12,6 +12,7 @@
         android:id="@+id/btn_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
         android:src="@drawable/back_arrow"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -35,12 +36,12 @@
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_marginTop="24dp"
+        android:backgroundTint="#F5F6F6"
+        android:drawableStart="@drawable/mail_icon"
+        android:paddingStart="@dimen/mrg_hor_16"
+        android:paddingEnd="10dp"
         android:text="@string/example_gmail_com"
         android:textColor="@color/black_new"
-        android:paddingEnd="10dp"
-        android:paddingStart="@dimen/mrg_hor_16"
-        android:backgroundTint="#F5F6F6"
-        android:drawableLeft="@drawable/mail_icon"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,12 +50,12 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/change_mail"
-        android:textColor="@color/black_new"
-        app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="12dp"
         android:fontFamily="@font/roboto_regular"
+        android:text="@string/change_mail"
+        android:textColor="@color/black_new"
         android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_mail_change" />
 
     <EditText
@@ -63,12 +64,12 @@
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_marginTop="50dp"
+        android:backgroundTint="#F5F6F6"
+        android:drawableStart="@drawable/lock"
+        android:paddingStart="@dimen/mrg_hor_16"
+        android:paddingEnd="10dp"
         android:text="@string/example_gmail_com"
         android:textColor="@color/black_new"
-        android:paddingEnd="10dp"
-        android:paddingStart="@dimen/mrg_hor_16"
-        android:backgroundTint="#F5F6F6"
-        android:drawableLeft="@drawable/lock"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -77,12 +78,12 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/change_password"
-        android:textColor="@color/black_new"
-        app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="12dp"
         android:fontFamily="@font/roboto_regular"
+        android:text="@string/change_password"
+        android:textColor="@color/black_new"
         android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_password_change" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
