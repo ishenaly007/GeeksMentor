@@ -137,5 +137,13 @@
     <string name="example_gmail_com">example@gmail.com</string>
     <string name="change_mail">Сменить почту</string>
     <string name="change_password">Сменить пароль</string>
+    <string name="become_mentor">Стать ментором</string>
+    <string name="to_become_mentor">Чтобы стать ментором заполните</string>
+    <string name="month">Месяц</string>
+    <string name="group">Группа</string>
+    <string name="group_num">Номер группы</string>
+    <string name="personal_data">Личные данные</string>
+    <string name="tell_about_yourself">Расскажите о себе</string>
+    <string name="send">Отправить</string>
 
 </resources>
