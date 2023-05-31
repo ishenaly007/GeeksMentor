@@ -122,5 +122,17 @@
     <string name="ratings_and_reviews_tv">Оценки и отзывы</string>
     <string name="rating_mentor">Оцените ментора</string>
     <string name="sul">Султан Эргешов</string>
+    <string name="names">ФИО</string>
+    <string name="majority">Направление</string>
+    <string name="about_yourself">О себе</string>
+    <string name="doesnt_matter">Меня зовут Султан, мне 21 годик. Всегда хотел потыкать компуктер и всё такое. Уже 5 месяцев тыкаю компуктер и рисую квадратики, иногда большие а иногда маленькие. Редко но иногда рисую элипсы. Люблю помогать другим людям тыкать в компуктер</string>
+    <string name="skills">Навыки и умения</string>
+    <string name="add">Добавить...</string>
+    <string name="busyness">Занятость</string>
+    <string name="weekdays">По будням</string>
+    <string name="from">от</string>
+    <string name="to">до</string>
+    <string name="weekends">По выходным</string>
+    <string name="contacts">Контакты</string>
 
 </resources>
