@@ -48,7 +48,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/right_arrow"
+            android:src="@drawable/ok"
             android:layout_marginStart="365dp"
             android:layout_marginTop="3dp"/>
 
@@ -80,9 +80,10 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/right_arrow"
+            android:src="@drawable/ok"
             android:layout_marginStart="365dp"
-            android:layout_marginTop="3dp"/>
+            android:layout_marginTop="3dp"
+            android:visibility="gone"/>
 
     </RelativeLayout>
 
