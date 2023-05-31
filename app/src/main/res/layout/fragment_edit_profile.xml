@@ -17,6 +17,7 @@
             android:id="@+id/btn_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
             android:src="@drawable/back_arrow"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -68,13 +69,13 @@
             app:layout_constraintTop_toBottomOf="@+id/mentors_profile_photo" />
 
         <EditText
-            android:id="@+id/et_name_change"
+            android:id="@+id/et_group_num_change"
             style="@style/et_white_and_black"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_marginTop="24dp"
             android:backgroundTint="#F5F6F6"
-            android:drawableLeft="@drawable/login_vector"
+            android:drawableStart="@drawable/login_vector"
             android:paddingStart="@dimen/mrg_hor_16"
             android:text="Эргешов Султан"
             android:textColor="@color/black_new"
@@ -93,7 +94,7 @@
             android:textColor="@color/black_new"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/et_name_change" />
+            app:layout_constraintTop_toBottomOf="@+id/et_group_num_change" />
 
         <Spinner
             android:id="@id/major_spinner"
