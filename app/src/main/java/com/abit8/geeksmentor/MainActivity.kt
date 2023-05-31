@@ -1,6 +1,7 @@
 package com.abit8.geeksmentor
 
 import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
@@ -15,7 +16,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 
 @Suppress("DEPRECATION")
 class MainActivity : AppCompatActivity() {
-//    private lateinit var pref: Pref
+
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,10 +28,6 @@ class MainActivity : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment_activity_main)
 
         navController.navigate(R.id.onBoardFragment)
-//        pref = Pref(this)
-//        if (!pref.isUserSeen()) {
-//            navController.navigate(R.id.onBoardFragment)
-//        } -- чтоб только один раз работал онборд
 
         val appBarConfiguration = AppBarConfiguration(
             setOf(
@@ -42,7 +39,7 @@ class MainActivity : AppCompatActivity() {
         val bottomNavFragments = arrayListOf(
             R.id.navigation_home,
             R.id.navigation_search,
-            R.id.navigation_profile
+            R.id.navigation_profile,
         )
         navController.addOnDestinationChangedListener { controller, destination, arguments ->
             navView.isVisible = bottomNavFragments.contains(destination.id)
@@ -53,7 +50,8 @@ class MainActivity : AppCompatActivity() {
                 window.statusBarColor = Color.TRANSPARENT
             } else {
                 supportActionBar?.show()
-                window.statusBarColor = ContextCompat.getColor(this, R.color.purple_700)
+                window.statusBarColor = ContextCompat.getColor(this, R.color.black)
+                supportActionBar?.setBackgroundDrawable(ColorDrawable(Color.BLACK))
             }
         }
     }
