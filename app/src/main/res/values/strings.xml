@@ -134,5 +134,8 @@
     <string name="to">до</string>
     <string name="weekends">По выходным</string>
     <string name="contacts">Контакты</string>
+    <string name="example_gmail_com">example@gmail.com</string>
+    <string name="change_mail">Сменить почту</string>
+    <string name="change_password">Сменить пароль</string>
 
 </resources>
