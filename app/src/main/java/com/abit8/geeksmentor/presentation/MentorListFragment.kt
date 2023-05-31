@@ -10,7 +10,6 @@ import com.abit8.geeksmentor.R
 
 class MentorListFragment : Fragment() {
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

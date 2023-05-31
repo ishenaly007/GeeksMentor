@@ -26,19 +26,19 @@ class MentorProfileFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.btnMentorsProfileNotification.setOnClickListener {
-            findNavController().navigate(R.id.mentors_notification_fragment)
+        binding.btnBecomeMentor.setOnClickListener {
+            findNavController().navigate(R.id.becomeMentorFragment)
         }
 
         binding.btnEditMentorProfileInfo.setOnClickListener {
             findNavController().navigate(R.id.edit_mentor_profile_info_fragment)
         }
 
-        binding.btnMentorsProfileData.setOnClickListener {
+        binding.btnMyData.setOnClickListener {
             findNavController().navigate(R.id.mentors_profile_data_fragment)
         }
 
-        binding.btnMentorsProfileLanguage.setOnClickListener {
+        binding.btnLanguage.setOnClickListener {
             findNavController().navigate(R.id.mentors_profile_language_fragment)
         }
 

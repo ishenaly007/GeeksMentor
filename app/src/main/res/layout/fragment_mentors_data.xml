@@ -5,8 +5,7 @@
     android:id="@+id/mentors_profile_data_fragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="@dimen/mrg_hor_16"
-    tools:context=".ui.mentorprofile.MentorsDataFragment">
+    android:layout_margin="@dimen/mrg_hor_16">
 
     <TextView
         android:id="@+id/btn_back"
@@ -61,19 +60,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/et_phone_number_change" />
 
-    <EditText
-        android:id="@+id/et_sex_change"
-        style="@style/et_white_and_black"
-        android:layout_width="328dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="@dimen/mrg_hor_16"
-        android:hint="@string/sex"
-        android:paddingStart="@dimen/mrg_hor_16"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/et_email_change" />
-
     <TextView
         android:id="@+id/password_tv"
         android:layout_width="wrap_content"
@@ -85,7 +71,7 @@
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/et_sex_change" />
+        app:layout_constraintTop_toBottomOf="@id/et_email_change" />
 
     <EditText
         android:id="@+id/et_password_change"
@@ -94,6 +80,7 @@
         android:layout_height="48dp"
         android:layout_marginTop="@dimen/mrg_hor_16"
         android:hint="*************"
+        android:inputType="textPassword"
         android:paddingStart="@dimen/mrg_hor_16"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"

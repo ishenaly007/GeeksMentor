@@ -17,11 +17,7 @@
         android:label="@string/title_dashboard"
         tools:layout="@layout/fragment_search" />
 
-    <fragment
-        android:id="@+id/navigation_profile"
-        android:name="com.abit8.geeksmentor.presentation.profile.ProfileFragment"
-        android:label="@string/title_profile"
-        tools:layout="@layout/fragment_profile" />
+
     <fragment
         android:id="@+id/onBoardFragment"
         android:name="com.abit8.geeksmentor.presentation.onboard.OnBoardFragment"
@@ -73,9 +69,9 @@
         tools:layout="@layout/fragment_mentors_data" />
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.abit8.geeksmentor.presentation.mentorprofile.ProfileFragment"
+        android:name="com.abit8.geeksmentor.presentation.mentorprofile.MentorProfileFragment"
         android:label="fragment_profile"
-        tools:layout="@layout/fragment_profile" >
+        tools:layout="@layout/fragment_mentor_profile">
         <action
             android:id="@+id/action_profileFragment_to_mentorsDataFragment"
             app:destination="@id/mentorsDataFragment" />

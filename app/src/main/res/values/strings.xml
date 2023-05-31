@@ -51,6 +51,9 @@
     //Added new strings
     <string name="enter">Войдите</string>
     <string name="login">Логин</string>
+    <string name="name">Ваше имя</string>
+    <string name="second_name">Ваша фамилия</string>
+    <string name="save">Сохранить</string>
     <string name="forgot_your_password">Забыли пароль?</string>
     <string name="password">Пароль</string>
     <string name="enter2">Войти</string>
@@ -88,4 +91,20 @@
     <string name="all_mentors">Все менторы</string>
     <string name="sultan_ergeshov">Султан Эргешов</string>
     <string name="ux_ui_mentors">Менторы по UX-UI Дизайну</string>
+    <string name="mentors_frontend">Менторы фронтенда</string>
+    <string name="mentors_ux_ui">Менторы UX-UI</string>
+    <string name="back">Назад</string>
+    <string name="my_data">Мои данные</string>
+    <string name="phone_number">Номер телефона</string>
+    <string name="sex">Ваш пол</string>
+    <string name="continue_btn">Пропустить</string>
+    <string name="todo">TODO</string>
+    <string name="russian">русский</string>
+    <string name="kyrgyz">кыргызча</string>
+    <string name="edit_profile">Редактировать профиль</string>
+    <string name="language">Язык</string>
+    <string name="exit">Выйти</string>
+    <string name="bad_con">Плохое соединение</string>
+    <string name="try_reconnect">Попробуйте переподключиться или перейти на мобильный интернет</string>
+    <string name="try_again">Повторить</string>
 </resources>

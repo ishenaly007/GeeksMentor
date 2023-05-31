@@ -5,8 +5,7 @@
     android:id="@+id/edit_mentor_profile_info_fragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="@dimen/mrg_hor_16"
-    tools:context=".ui.mentorprofile.EditMentorProfileFragment">
+    android:layout_margin="@dimen/mrg_hor_16">
 
     <TextView
         android:id="@+id/btn_back"

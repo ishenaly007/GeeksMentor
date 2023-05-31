@@ -26,7 +26,7 @@ class SignInFragment : Fragment() {
 
     private fun initClicks() {
         binding.apply {
-            tvForgotPassword.setOnClickListener {
+            forgotPasswordMain.setOnClickListener {
                 findNavController().navigate(R.id.passwordForgetFragment)
             }
             btnEnterMain.setOnClickListener {

@@ -37,7 +37,6 @@
             android:drawableStart="@drawable/search_vector"
             android:layout_margin="16dp"
             android:paddingStart="16dp"
-
             tools:ignore="Autofill,RtlSymmetry,TextFields" />
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_ux_ui_home"

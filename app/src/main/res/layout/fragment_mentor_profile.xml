@@ -5,8 +5,7 @@
     android:id="@+id/profile_fragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="@dimen/mrg_hor_16"
-    tools:context=".ui.mentorprofile.ProfileFragment">
+    android:layout_margin="@dimen/mrg_hor_16">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/mentors_profile_photo"
@@ -23,7 +22,7 @@
         android:layout_marginStart="@dimen/mrg_hor_16"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/roboto_medium"
-        android:text="@string/okay_i_pull_up"
+        android:text="Name"
         android:textColor="@color/black_new"
         android:textSize="24sp"
         app:layout_constraintStart_toEndOf="@+id/mentors_profile_photo"
@@ -35,7 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/mrg_hor_16"
         android:layout_marginTop="6dp"
-        android:text="@string/ux_ui_"
+        android:text="направление"
         android:textColor="@color/black_new"
         android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@+id/mentors_profile_photo"

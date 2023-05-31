@@ -33,7 +33,7 @@ class LogInFragment : Fragment() {
                 findNavController().navigate(R.id.signInFragment)
             }
             btnRegistrationSignup.setOnClickListener {
-                findNavController().navigate(R.id.registrationinProcessFragment)
+                findNavController().navigate(R.id.logInFragment)
             }
         }
     }
