@@ -23,121 +23,132 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             />
-        
+
         <EditText
             android:id="@+id/et_search_home"
+            style="@style/et_grey"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            style="@style/et_grey"
-            android:hint="@string/searching_mentors"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="24dp"
-            app:layout_constraintTop_toBottomOf="@id/tv_home"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp"
             android:drawableStart="@drawable/search_vector"
-            android:layout_margin="16dp"
+            android:hint="@string/searching_mentors"
             android:paddingStart="16dp"
-            tools:ignore="Autofill,RtlSymmetry,TextFields" />
+            app:layout_constraintBottom_toTopOf="@+id/btn_ux_ui_home"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_home"
+            tools:ignore="Autofill,RtlSymmetry,TextFields,VisualLintTextFieldSize,TextContrastCheck,TouchTargetSizeCheck" />
+
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_ux_ui_home"
-            android:layout_width="160dp"
-            android:layout_height="66dp"
             style="@style/btn_light_grey"
-            android:text="@string/ux_ui"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="214dp"
             android:drawableLeft="@drawable/figma_vector"
-            app:layout_constraintTop_toBottomOf="@+id/et_search_home"
-            app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="26dp"
-            android:layout_marginTop="8dp"
-            android:textSize="14sp"
             android:fontFamily="@font/roboto_regular"
+            android:text="@string/ux_ui"
             android:textColor="@color/black_new"
             android:textFontWeight="400"
-            tools:ignore="RtlHardcoded,UnusedAttribute" />
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_search_home"
+            tools:ignore="RtlHardcoded,UnusedAttribute,VisualLintOverlap,VisualLintButtonSize" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_frontend_home"
-            android:layout_width="160dp"
-            android:layout_height="66dp"
             style="@style/btn_light_grey"
-            android:text="@string/frontend"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:layout_marginStart="214dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
             android:drawableLeft="@drawable/frontend_vector"
-            app:layout_constraintTop_toBottomOf="@+id/et_search_home"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="26dp"
-            android:layout_marginTop="8dp"
-            android:textSize="14sp"
             android:fontFamily="@font/roboto_regular"
+            android:text="@string/frontend"
             android:textColor="@color/black_new"
             android:textFontWeight="400"
-            tools:ignore="RtlHardcoded,UnusedAttribute" />
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_search_home"
+            tools:ignore="RtlHardcoded,UnusedAttribute,VisualLintButtonSize" />
+
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_backend_home"
-            android:layout_width="160dp"
+            android:layout_width="match_parent"
             android:layout_height="66dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="214dp"
+            android:layout_marginStart="16dp"
             style="@style/btn_light_grey"
             android:text="@string/backend"
             android:drawableLeft="@drawable/backend_vector"
             app:layout_constraintTop_toBottomOf="@+id/btn_ux_ui_home"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="26dp"
-            android:layout_marginTop="8dp"
             android:textSize="14sp"
             android:fontFamily="@font/roboto_regular"
             android:textColor="@color/black_new"
             android:textFontWeight="400"
-            tools:ignore="RtlHardcoded,UnusedAttribute" />
+            tools:ignore="RtlHardcoded,UnusedAttribute,VisualLintButtonSize,VisualLintOverlap" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_android_home"
-            android:layout_width="160dp"
+            android:layout_width="match_parent"
             android:layout_height="66dp"
+            android:layout_marginStart="214dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
             style="@style/btn_light_grey"
             android:text="@string/android"
             android:drawableLeft="@drawable/kotlin"
             app:layout_constraintTop_toBottomOf="@+id/btn_frontend_home"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="26dp"
-            android:layout_marginTop="8dp"
             android:textSize="14sp"
             android:fontFamily="@font/roboto_regular"
             android:textColor="@color/black_new"
             android:textFontWeight="400"
-            tools:ignore="RtlHardcoded,UnusedAttribute" />
+            tools:ignore="RtlHardcoded,UnusedAttribute,VisualLintButtonSize" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_technical_home"
-            android:layout_width="160dp"
+            android:layout_width="match_parent"
             android:layout_height="66dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="214dp"
+            android:layout_marginStart="16dp"
             style="@style/btn_light_grey"
             android:text="@string/technical_mentors"
             android:drawableLeft="@drawable/chip_vector"
             app:layout_constraintTop_toBottomOf="@+id/btn_backend_home"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="26dp"
-            android:layout_marginTop="8dp"
             android:textSize="13sp"
             android:fontFamily="@font/roboto_regular"
             android:textColor="@color/black_new"
             android:textFontWeight="400"
-            tools:ignore="RtlHardcoded,UnusedAttribute" />
+            tools:ignore="RtlHardcoded,UnusedAttribute,VisualLintButtonSize,VisualLintOverlap" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_admins_home"
-            android:layout_width="160dp"
+            android:layout_width="match_parent"
             android:layout_height="66dp"
+            android:layout_marginStart="214dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
             style="@style/btn_light_grey"
             android:text="@string/admins"
             android:drawableLeft="@drawable/user_vector"
             app:layout_constraintTop_toBottomOf="@+id/btn_android_home"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="26dp"
-            android:layout_marginTop="8dp"
             android:textSize="14sp"
             android:fontFamily="@font/roboto_regular"
             android:textColor="@color/black_new"
             android:textFontWeight="400"
-            tools:ignore="RtlHardcoded,UnusedAttribute" />
+            tools:ignore="RtlHardcoded,UnusedAttribute,VisualLintButtonSize" />
 
         <TextView
             android:id="@+id/tv_mentors_of_month"
@@ -162,7 +173,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="16dp"
             android:layout_marginTop="25dp"
-            />
+            tools:ignore="UseCompatTextViewDrawableXml" />
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv1_main"
             android:layout_width="match_parent"
