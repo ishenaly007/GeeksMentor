@@ -52,8 +52,8 @@
         app:layout_constraintTop_toBottomOf="@+id/register_login_page"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-
         tools:ignore="Autofill,RtlSymmetry,TextFields,VisualLintTextFieldSize" />
+  
     <EditText
         android:id="@+id/et_email_signup"
         android:layout_width="match_parent"

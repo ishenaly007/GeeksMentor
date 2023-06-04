@@ -30,12 +30,12 @@ class MentorProfileFragment : Fragment() {
             findNavController().navigate(R.id.becomeMentorFragment)
         }
 
-        binding.btnEditMentorProfileInfo.setOnClickListener {
+        /*binding.btnEditMentorProfileInfo.setOnClickListener {
             findNavController().navigate(R.id.edit_mentor_profile_info_fragment)
-        }
+        }*/
 
         binding.btnMyData.setOnClickListener {
-            findNavController().navigate(R.id.mentors_profile_data_fragment)
+            findNavController().navigate(R.id.dataFragment)
         }
 
         binding.btnLanguage.setOnClickListener {

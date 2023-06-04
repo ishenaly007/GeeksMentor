@@ -5,7 +5,8 @@
     android:layout_height="match_parent"
     android:layout_margin="@dimen/mrg_hor_16"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/mentors_profile_language_fragment">
+    android:id="@+id/mentors_profile_language_fragment"
+    tools:context=".ui.profile.LanguageFragment">
 
     <TextView
         android:id="@+id/btn_back"
@@ -47,7 +48,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/right_arrow"
+            android:src="@drawable/ok"
             android:layout_marginStart="365dp"
             android:layout_marginTop="3dp"/>
 
@@ -79,9 +80,10 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/right_arrow"
+            android:src="@drawable/ok"
             android:layout_marginStart="365dp"
-            android:layout_marginTop="3dp"/>
+            android:layout_marginTop="3dp"
+            android:visibility="gone"/>
 
     </RelativeLayout>
 
