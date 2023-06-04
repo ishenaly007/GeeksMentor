@@ -1,4 +1,4 @@
-package com.abit8.geeksmentor.ui.profile
+package com.abit8.geeksmentor.presentation.profile
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,12 +6,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.abit8.geeksmentor.R
-import com.abit8.geeksmentor.databinding.FragmentProfileBinding
+import com.abit8.geeksmentor.databinding.FragmentMentorProfileBinding
 
 class ProfileFragment : Fragment() {
 
-    private lateinit var binding: FragmentProfileBinding
+    private lateinit var binding: FragmentMentorProfileBinding
     val navController = findNavController()
 
     override fun onCreateView(
@@ -19,7 +18,7 @@ class ProfileFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentProfileBinding.inflate(inflater, container, false)
+        binding = FragmentMentorProfileBinding.inflate(inflater, container, false)
         return binding.root
     }
 

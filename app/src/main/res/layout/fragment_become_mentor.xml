@@ -5,8 +5,7 @@
     android:id="@+id/become_mentor_fragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="@dimen/mrg_hor_16"
-    tools:context=".ui.profile.BecomeMentorFragment">
+    android:layout_margin="@dimen/mrg_hor_16">
 
     <ImageView
         android:id="@+id/btn_back"
