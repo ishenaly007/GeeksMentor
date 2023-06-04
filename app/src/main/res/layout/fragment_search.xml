@@ -24,44 +24,48 @@
             android:id="@+id/constraint_search"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
+
             <EditText
                 android:id="@+id/et_search_search"
-                android:layout_width="300dp"
-                android:layout_height="50dp"
                 style="@style/et_grey"
-                android:hint="@string/searching_mentors"
-                android:drawableStart="@drawable/search_vector"
-                android:paddingStart="16dp"
-                tools:ignore="Autofill,RtlSymmetry,TextFields"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginTop="77dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
                 android:layout_marginStart="16dp"
-                />
+                android:layout_marginTop="77dp"
+                android:drawableStart="@drawable/search_vector"
+                android:hint="@string/searching_mentors"
+                android:paddingStart="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="Autofill,RtlSymmetry,TextFields,TextContrastCheck,VisualLintTextFieldSize,VisualLintOverlap" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_drawer"
-                android:layout_width="50dp"
-                android:layout_height="60dp"
                 style="@style/btn_yellow_and_black"
-                app:iconTint="@color/black_new"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="354dp"
                 android:layout_marginTop="72dp"
-                android:layout_marginEnd="16dp"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="@dimen/mrg_hor_16"
                 app:icon="@drawable/drawer_vector"
-                />
+                app:iconTint="@color/black_new"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TouchTargetSizeCheck,VisualLintButtonSize" />
+
             <TextView
                 android:id="@+id/tv_mentors_of_month"
+                style="@style/text_14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/mentors_of_month"
-                app:layout_constraintTop_toBottomOf="@+id/et_search_search"
-                app:layout_constraintStart_toStartOf="parent"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="32dp"
-                style="@style/text_14"
-                />
+                android:text="@string/mentors_of_month"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_search_search"
+                tools:ignore="TextContrastCheck" />
 
             <TextView
                 android:id="@+id/tv_all_mentors"
@@ -88,17 +92,19 @@
                 android:layout_marginTop="24dp"
                 android:layout_marginStart="16dp"
                 />
+
             <TextView
                 android:id="@+id/tv_mentors_frontend"
+                style="@style/text_14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/mentors_frontend"
-                app:layout_constraintTop_toBottomOf="@+id/rv1_search"
-                app:layout_constraintStart_toStartOf="parent"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="32dp"
-                style="@style/text_14"
-                />
+                android:text="@string/mentors_frontend"
+                android:textColor="#FFE0B2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rv1_search"
+                tools:ignore="TextContrastCheck" />
 
             <TextView
                 android:id="@+id/tv_all_mentors2"
@@ -125,17 +131,19 @@
                 android:layout_marginTop="24dp"
                 android:layout_marginStart="16dp"
                 />
+
             <TextView
                 android:id="@+id/tv_mentors_ux_ui"
+                style="@style/text_14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/mentors_ux_ui"
-                app:layout_constraintTop_toBottomOf="@+id/rv2_search"
-                app:layout_constraintStart_toStartOf="parent"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="32dp"
-                style="@style/text_14"
-                />
+                android:text="@string/mentors_ux_ui"
+                android:textColor="#FFE0B2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rv2_search"
+                tools:ignore="TextContrastCheck" />
 
             <TextView
                 android:id="@+id/tv_all_mentors3"
