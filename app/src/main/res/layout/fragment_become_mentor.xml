@@ -1,14 +1,166 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/become_mentor_fragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/mentors_notification_fragment">
+    android:layout_margin="@dimen/mrg_hor_16">
 
-    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/back_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="become mentor fragment" />
+        android:id="@+id/become_mentor_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/become_mentor"
+        android:textColor="@color/black_new"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_back" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/to_become_mentor_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/to_become_mentor"
+        android:textColor="@color/black_new"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/become_mentor_tv" />
+
+    <TextView
+        android:id="@+id/major_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/majority"
+        android:textColor="@color/black_new"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/to_become_mentor_tv" />
+
+    <Spinner
+        android:id="@id/major_spinner"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="14sp"
+        android:background="@drawable/et_background2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/major_tv" />
+
+    <TextView
+        android:id="@+id/month_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/month"
+        android:textColor="@color/black_new"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/major_spinner" />
+
+    <Spinner
+        android:id="@+id/month_spinner"
+        android:layout_width="190dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="14sp"
+        android:background="@drawable/et_background2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/month_tv" />
+
+    <TextView
+        android:id="@+id/group_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/group"
+        android:textColor="@color/black_new"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/month_spinner" />
+
+    <EditText
+        android:id="@+id/et_group_num_change"
+        style="@style/et_white_and_black"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#F5F6F6"
+        android:drawableStart="@drawable/users_vector"
+        android:hint="@string/group_num"
+        android:paddingStart="@dimen/mrg_hor_16"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/group_tv" />
+
+    <TextView
+        android:id="@+id/personal_data_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/personal_data"
+        android:textColor="@color/black_new"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_group_num_change" />
+
+    <EditText
+        android:id="@+id/et_names_change"
+        style="@style/et_white_and_black"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#F5F6F6"
+        android:drawableStart="@drawable/user_vector"
+        android:hint="@string/names"
+        android:paddingStart="@dimen/mrg_hor_16"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/personal_data_tv" />
+
+    <EditText
+        android:id="@+id/et_tell_about_yourself_change"
+        style="@style/et_white_and_black"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#F5F6F6"
+        android:hint="@string/tell_about_yourself"
+        android:paddingStart="48dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_names_change" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_send_changes"
+        style="@style/btn_yellow_and_black"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:drawableEnd="@drawable/arrow_right_black"
+        android:text="@string/send"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

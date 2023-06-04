@@ -1,4 +1,4 @@
-package com.abit8.geeksmentor.retrofit
+package com.abit8.geeksmentor.data.remote.retrofit
 
 
 import retrofit2.http.POST

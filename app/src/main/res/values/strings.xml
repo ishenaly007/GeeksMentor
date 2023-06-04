@@ -48,6 +48,19 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+
+    <string name="bad_con">Плохое соединение</string>
+    <string name="try_reconnect">Попробуйте переподключиться или перейти на мобильный интернет</string>
+    <string name="exit">Выйти</string>
+    <string name="try_again">Повторить</string>
+
+
+    <string name="onboard_1">Найди ментора мечты или стань им</string>
+    <string name="onboard_2">Только лучшие ментора</string>
+    <string name="continue_btn">Далее</string>
+    <string name="todo">TODO</string>
+
+
     //Added new strings
     <string name="enter">Войдите</string>
     <string name="login">Логин</string>
@@ -73,8 +86,13 @@
     <string name="continue_board1">Далее</string>
     <string name="only_best_mentors">Только лучшие ментора</string>
     <string name="skip">Пропустить</string>
+    <string name="title_profile">Profile</string>
     <string name="fio">ФИО</string>
     <string name="have_account_enter">Уже есть аккаунт? Войдите</string>
+    <string name="notification">Уведомления</string>
+    <string name="ux_ui_">UX-UI Дизайнер</string>
+    <string name="okay_i_pull_up">Okay I pull up</string>
+
     <string name="registration2">Регистрация</string>
     <string name="create_new_password">Придумайте новый пароль</string>
     <string name="new_password">Новый пароль</string>
@@ -96,15 +114,37 @@
     <string name="back">Назад</string>
     <string name="my_data">Мои данные</string>
     <string name="phone_number">Номер телефона</string>
+    <string name="go_to_telegram">Перейти в Telegram</string>
+    <string name="ratings_and_reviews_tv">Оценки и отзывы</string>
+    <string name="rating_mentor">Оцените ментора</string>
+    <string name="sul">Султан Эргешов</string>
+    <string name="names">ФИО</string>
+    <string name="majority">Направление</string>
+    <string name="about_yourself">О себе</string>
+    <string name="doesnt_matter">Меня зовут Султан, мне 21 годик. Всегда хотел потыкать компуктер и всё такое. Уже 5 месяцев тыкаю компуктер и рисую квадратики, иногда большие а иногда маленькие. Редко но иногда рисую элипсы. Люблю помогать другим людям тыкать в компуктер</string>
+    <string name="skills">Навыки и умения</string>
+    <string name="add">Добавить...</string>
+    <string name="busyness">Занятость</string>
+    <string name="weekdays">По будням</string>
+    <string name="from">от</string>
+    <string name="to">до</string>
+    <string name="weekends">По выходным</string>
+    <string name="contacts">Контакты</string>
+    <string name="example_gmail_com">example@gmail.com</string>
+    <string name="change_mail">Сменить почту</string>
+    <string name="change_password">Сменить пароль</string>
+    <string name="become_mentor">Стать ментором</string>
+    <string name="to_become_mentor">Чтобы стать ментором заполните</string>
+    <string name="month">Месяц</string>
+    <string name="group">Группа</string>
+    <string name="group_num">Номер группы</string>
+    <string name="personal_data">Личные данные</string>
+    <string name="tell_about_yourself">Расскажите о себе</string>
+    <string name="send">Отправить</string>
+
     <string name="sex">Ваш пол</string>
-    <string name="continue_btn">Пропустить</string>
-    <string name="todo">TODO</string>
     <string name="russian">русский</string>
     <string name="kyrgyz">кыргызча</string>
     <string name="edit_profile">Редактировать профиль</string>
     <string name="language">Язык</string>
-    <string name="exit">Выйти</string>
-    <string name="bad_con">Плохое соединение</string>
-    <string name="try_reconnect">Попробуйте переподключиться или перейти на мобильный интернет</string>
-    <string name="try_again">Повторить</string>
 </resources>
