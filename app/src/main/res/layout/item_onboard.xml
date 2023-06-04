@@ -32,7 +32,7 @@
             android:layout_gravity="center|bottom"
             android:layout_marginBottom="84dp"
             app:cornerRadius="10dp"
-            android:text="@string/continue_btn"
+            android:text="@string/skip"
             android:textAllCaps="false"
             android:drawableEnd="@drawable/arrow_right_black"
             android:paddingStart="36dp"
@@ -62,7 +62,7 @@
             android:src="@drawable/shadow2"
             android:layout_marginStart="69dp"
             android:layout_marginTop="210dp"
-            android:contentDescription="@string/todo" />
+            android:contentDescription="@string/title_activity_on_board" />
 
         <ImageView
             android:id="@+id/img_boarding_two"
@@ -71,7 +71,7 @@
             android:src="@drawable/boarding_two"
             android:layout_gravity="center|top"
             android:layout_marginTop="143dp"
-            android:contentDescription="@string/todo" />
+            android:contentDescription="@string/title_activity_on_board" />
 
         <ImageView
             android:id="@+id/onboard_likes"
@@ -80,7 +80,7 @@
             android:src="@drawable/board2_like"
             android:layout_marginStart="95dp"
             android:layout_marginTop="131dp"
-            android:contentDescription="@string/todo" />
+            android:contentDescription="@string/title_activity_on_board" />
 
         <TextView
             android:id="@+id/second_title"
@@ -101,7 +101,7 @@
             android:layout_gravity="center|bottom"
             android:layout_marginBottom="84dp"
             app:cornerRadius="10dp"
-            android:text="@string/continue_btn"
+            android:text="@string/continue_board1"
             android:textAllCaps="false"
             android:drawableEnd="@drawable/arrow_right_black"
             android:paddingStart="36dp"
@@ -178,7 +178,7 @@
             android:layout_gravity="center|bottom"
             android:layout_marginBottom="84dp"
             app:cornerRadius="10dp"
-            android:text="@string/continue_btn"
+            android:text="@string/continue_board1"
             android:textAllCaps="false"
             style="@style/btn_yellow_and_black"
             tools:ignore="RtlSymmetry" />
