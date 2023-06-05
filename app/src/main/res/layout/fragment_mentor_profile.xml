@@ -141,6 +141,7 @@
         android:id="@+id/btn_exit_mentor_profile"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:backgroundTint="@color/exit_btn_red"
         android:fontFamily="@font/roboto_regular"
         android:letterSpacing="0"
         android:text="@string/exit"
