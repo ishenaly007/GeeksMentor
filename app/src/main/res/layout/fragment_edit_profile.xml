@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/edit_profile_info_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/mrg_hor_16"
+        tools:context=".presentation.mentorprofile.editmentorprofile.EditProfileFragment">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:src="@drawable/back_arrow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/edit_profile_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/edit_profile"
+            android:textColor="@color/black_new"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_back" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mentors_profile_photo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/ic_launcher_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edit_profile_tv" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/btn_change_photo"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="76dp"
+            android:src="@drawable/camera"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/mentors_profile_photo" />
+
+        <TextView
+            android:id="@+id/my_data_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/names"
+            android:textColor="@color/black_new"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mentors_profile_photo" />
+
+        <EditText
+            android:id="@+id/et_group_num_change"
+            style="@style/et_white_and_black"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#F5F6F6"
+            android:drawableStart="@drawable/login_vector"
+            android:paddingStart="@dimen/mrg_hor_16"
+            android:text="Эргешов Султан"
+            android:textColor="@color/black_new"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/my_data_tv" />
+
+        <TextView
+            android:id="@+id/major_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/majority"
+            android:textColor="@color/black_new"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_group_num_change" />
+
+        <Spinner
+            android:id="@id/major_spinner"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="14sp"
+            android:background="@drawable/et_background2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/major_tv" />
+
+        <TextView
+            android:id="@+id/about_yourself_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/about_yourself"
+            android:textColor="@color/black_new"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/major_spinner" />
+
+        <EditText
+            android:id="@+id/about_yourself_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/et_background"
+            android:backgroundTint="#F5F6F6"
+            android:fontFamily="@font/roboto_regular"
+            android:padding="@dimen/mrg_hor_16"
+            android:text="@string/doesnt_matter"
+            android:textColor="@color/black_new"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/about_yourself_tv" />
+
+        <TextView
+            android:id="@+id/skills_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/skills"
+            android:textColor="@color/black_new"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/about_yourself_et" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/skills_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/skills_tv">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/add_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/add"
+            android:textColor="@color/black_new"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/skills_rv" />
+
+        <TextView
+            android:id="@+id/busyness_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/busyness"
+            android:textColor="@color/black_new"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_tv" />
+
+        <TextView
+            android:id="@+id/weekdays_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/weekdays"
+            android:textColor="@color/black_new"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/busyness_tv" />
+
+        <TextView
+            android:id="@+id/from_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/from"
+            android:textColor="@color/black_new"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/weekdays_tv" />
+
+        <EditText
+            android:id="@+id/time_from_et"
+            style="@style/et_white_and_black"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginStart="@dimen/mrg_hor_16"
+            android:layout_marginTop="14dp"
+            android:backgroundTint="#F5F6F6"
+            android:paddingHorizontal="9dp"
+            android:paddingVertical="5dp"
+            android:text="10:00"
+            android:textColor="@color/black_new"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@id/from_tv"
+            app:layout_constraintTop_toBottomOf="@id/weekdays_tv" />
+
+        <TextView
+            android:id="@+id/to_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="19dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/to"
+            android:textColor="@color/black_new"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@id/time_from_et"
+            app:layout_constraintTop_toBottomOf="@id/weekdays_tv" />
+
+        <EditText
+            android:id="@+id/time_to_et2"
+            style="@style/et_white_and_black"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginStart="@dimen/mrg_hor_16"
+            android:layout_marginTop="14dp"
+            android:backgroundTint="#F5F6F6"
+            android:paddingHorizontal="9dp"
+            android:paddingVertical="5dp"
+            android:text="20:00"
+            android:textColor="@color/black_new"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@id/to_tv"
+            app:layout_constraintTop_toBottomOf="@id/weekdays_tv" />
+
+        //
+
+        <TextView
+            android:id="@+id/weekends_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/weekends"
+            android:textColor="@color/black_new"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/from_tv" />
+
+        <TextView
+            android:id="@+id/from_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/from"
+            android:textColor="@color/black_new"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/weekends_tv" />
+
+        <EditText
+            android:id="@+id/time_from_et2"
+            style="@style/et_white_and_black"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginStart="@dimen/mrg_hor_16"
+            android:layout_marginTop="14dp"
+            android:backgroundTint="#F5F6F6"
+            android:paddingHorizontal="9dp"
+            android:paddingVertical="5dp"
+            android:text="10:00"
+            android:textColor="@color/black_new"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@id/from_tv2"
+            app:layout_constraintTop_toBottomOf="@id/weekends_tv" />
+
+        <TextView
+            android:id="@+id/to_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="19dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/to"
+            android:textColor="@color/black_new"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@id/time_from_et2"
+            app:layout_constraintTop_toBottomOf="@id/weekends_tv" />
+
+        <EditText
+            android:id="@+id/time_to_et"
+            style="@style/et_white_and_black"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginStart="@dimen/mrg_hor_16"
+            android:layout_marginTop="14dp"
+            android:backgroundTint="#F5F6F6"
+            android:paddingHorizontal="9dp"
+            android:paddingVertical="5dp"
+            android:text="20:00"
+            android:textColor="@color/black_new"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@id/to_tv2"
+            app:layout_constraintTop_toBottomOf="@id/weekends_tv" />
+
+        <TextView
+            android:id="@+id/contacts_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/contacts"
+            android:textColor="@color/black_new"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/time_from_et2" />
+
+        <EditText
+            android:id="@+id/telegram"
+            style="@style/et_white_and_black"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#F5F6F6"
+            android:drawableStart="@drawable/logos_telegram"
+            android:paddingStart="@dimen/mrg_hor_16"
+            android:text="example"
+            android:textColor="#2254B5"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/contacts_tv" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_save_changes"
+            style="@style/btn_yellow_and_black"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/save"
+            app:cornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/telegram" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

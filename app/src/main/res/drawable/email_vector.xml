@@ -4,6 +4,6 @@
     android:width="25dp"
     android:viewportWidth="25"
     android:viewportHeight="25">
-                        <path android:pathData="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" android:strokeColor="#9E9E9E" android:strokeWidth="2" android:strokeLineCap="round" android:strokeLineJoin="round"/>
-                        <path android:pathData="M22 6L12 13L2 6" android:strokeColor="#9E9E9E" android:strokeWidth="2" android:strokeLineCap="round" android:strokeLineJoin="round"/>
+                <path android:pathData="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" android:strokeColor="#262523" android:strokeWidth="2" android:strokeLineCap="round" android:strokeLineJoin="round"/>
+                <path android:pathData="M22 6L12 13L2 6" android:strokeColor="#262523" android:strokeWidth="2" android:strokeLineCap="round" android:strokeLineJoin="round"/>
 </vector>

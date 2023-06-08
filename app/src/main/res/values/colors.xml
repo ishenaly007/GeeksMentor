@@ -7,18 +7,16 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-
-    <color name="white_new">#FFFFFF</color>
-    <color name="black_new">#262523</color>
-    <color name="yellow_new">#FFE600</color>
-    <color name="light_grey_new">#A8A5A5</color>
-    <color name="grey_new">#43413D</color>
+    //no internet
+    <color name="no_internet_dialog_background">#262523</color>
+    <color name="tv_try_color">#FFE600</color>
 
     //Added new colors
     <color name="black_new">#262523</color>
     <color name="white_new">#FFFFFF</color>
     <color name="yellow_new">#F7DF1E</color>
-    <color name="light_grey_new">#9E9E9E</color>
-    <color name="grey_new">#9E9E9E</color>
+    <color name="light_grey_new">#F1F1F1</color>
+    <color name="grey_new">#43413D</color>
+    <color name="exit_btn_red">#C84C4C</color>
 
 </resources>

@@ -3,48 +3,97 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@id/navigation_home">
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.abit8.geeksmentor.ui.home.HomeFragment"
+        android:name="com.abit8.geeksmentor.presentation.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/navigation_search"
-        android:name="com.abit8.geeksmentor.ui.search.SearchFragment"
+        android:name="com.abit8.geeksmentor.presentation.search.SearchFragment"
         android:label="@string/title_dashboard"
         tools:layout="@layout/fragment_search" />
 
-    <fragment
-        android:id="@+id/navigation_profile"
-        android:name="com.abit8.geeksmentor.ui.profile.ProfileFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_profile" />
+
     <fragment
         android:id="@+id/onBoardFragment"
-        android:name="com.abit8.geeksmentor.ui.onboard.OnBoardFragment"
+        android:name="com.abit8.geeksmentor.presentation.onboard.OnBoardFragment"
         android:label="fragment_on_board"
-        tools:layout="@layout/fragment_on_board" >
+        tools:layout="@layout/fragment_on_board">
         <action
             android:id="@+id/action_onBoardFragment_to_navigation_home"
             app:destination="@id/navigation_home" />
     </fragment>
     <fragment
         android:id="@+id/logInFragment"
-        android:name="com.abit8.geeksmentor.ui.auth.LogInFragment"
+        android:name="com.abit8.geeksmentor.presentation.auth.LogInFragment"
         android:label="fragment_log_in"
         tools:layout="@layout/fragment_log_in" />
     <fragment
         android:id="@+id/passwordForgetFragment"
-        android:name="com.abit8.geeksmentor.ui.auth.PasswordForgetFragment"
+        android:name="com.abit8.geeksmentor.presentation.auth.PasswordForgetFragment"
         android:label="fragment_password_forget"
         tools:layout="@layout/fragment_password_forget" />
     <fragment
         android:id="@+id/signInFragment"
-        android:name="com.abit8.geeksmentor.ui.auth.SignInFragment"
+        android:name="com.abit8.geeksmentor.presentation.auth.SignInFragment"
         android:label="fragment_sign_in"
         tools:layout="@layout/fragment_sign_in" />
+    <fragment
+        android:id="@+id/passwordForgetFragment2"
+        android:name="com.abit8.geeksmentor.presentation.auth.PasswordForgetFragment2"
+        android:label="fragment_password_forget2"
+        tools:layout="@layout/fragment_password_forget2" />
+    <fragment
+        android:id="@+id/becomeMentorFragment"
+        android:name="com.abit8.geeksmentor.presentation.mentorprofile.becomementor.BecomeMentorFragment"
+        android:label="fragment_become_mentor"
+        tools:layout="@layout/fragment_become_mentor" />
+
+    <fragment
+        android:id="@+id/languageFragment"
+        android:name="com.abit8.geeksmentor.presentation.mentorprofile.mentorsettings.LanguageFragment"
+        android:label="fragment_language"
+        tools:layout="@layout/fragment_language" />
+    <fragment
+        android:id="@+id/mentorsDataFragment"
+        android:name="com.abit8.geeksmentor.presentation.mentorprofile.mentorsettings.MentorsDataFragment"
+        android:label="fragment_mentors_data"
+        tools:layout="@layout/fragment_data" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.abit8.geeksmentor.presentation.mentorprofile.MentorProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_mentor_profile">
+        <action
+            android:id="@+id/action_profileFragment_to_mentorsDataFragment"
+            app:destination="@id/mentorsDataFragment" />
+         <action
+            android:id="@+id/action_profileFragment_to_languageFragment"
+            app:destination="@id/languageFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_becomeMentorFragment"
+            app:destination="@id/becomeMentorFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/bestMentorListFragment"
+        android:name="com.abit8.geeksmentor.presentation.mentorlists.BestMentorListFragment"
+        android:label="fragment_best_mentor_list"
+        tools:layout="@layout/fragment_best_mentor_list" />
+    <fragment
+        android:id="@+id/mentorListFragment"
+        android:name="com.abit8.geeksmentor.presentation.mentorlists.MentorListFragment"
+        android:label="fragment_mentor_list"
+        tools:layout="@layout/fragment_mentor_list" />
+    <fragment
+        android:id="@+id/dataFragment"
+        android:name="com.abit8.geeksmentor.presentation.profile.DataFragment"
+        android:label="fragment_data"
+        tools:layout="@layout/fragment_data" />
+
 
 </navigation>
