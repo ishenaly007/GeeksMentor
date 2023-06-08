@@ -36,6 +36,7 @@ class MainActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
         val bottomNavFragments = arrayListOf(
             R.id.navigation_home,
             R.id.navigation_search,

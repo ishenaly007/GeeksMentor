@@ -54,4 +54,8 @@ dependencies {
 
     //Indicator
     implementation("com.tbuonomo:dotsindicator:4.3")
+
+    //Code verification view
+    implementation "com.github.fraggjkee:sms-confirmation-view:1.7.1"
+
 }
