@@ -19,7 +19,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
 class MainActivity : AppCompatActivity() {
-//    private lateinit var pref: Pref
+    //    private lateinit var pref: Pref
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -70,6 +70,7 @@
     <string name="enter_using_google">Войти с помощью Google</string>
     <string name="enter_using_facebook">Войти с помощью Facebook</string>
     <string name="or">или</string>
+    <string name="underlined_enter"><u>Войдите</u></string>
     <string name="no_account_register_it">Нет аккаунта? Зарегистрируйтесь</string>
     <string name="registration">Зарегистрироваться</string>
     <string name="confirm_password">Повторите пароль</string>
@@ -92,7 +93,8 @@
     <string name="edit_profile">Редактировать профиль</string>
     <string name="ux_ui_">UX-UI Дизайнер</string>
     <string name="okay_i_pull_up">Okay I pull up</string>
-
+    <string name="password_reset_success">Письмо для сброса пароля отправлено на вашу почту</string>
+    <string name="password_reset_failure">Ошибка при отправке письма для сброса пароля: %s</string>
     <string name="registration2">Регистрация</string>
     <string name="create_new_password">Придумайте новый пароль</string>
     <string name="new_password">Новый пароль</string>
@@ -125,7 +127,6 @@
     <string name="names">ФИО</string>
     <string name="majority">Направление</string>
     <string name="about_yourself">О себе</string>
-    <string name="doesnt_matter">Меня зовут Султан, мне 21 годик. Всегда хотел потыкать компуктер и всё такое. Уже 5 месяцев тыкаю компуктер и рисую квадратики, иногда большие а иногда маленькие. Редко но иногда рисую элипсы. Люблю помогать другим людям тыкать в компуктер</string>
     <string name="skills">Навыки и умения</string>
     <string name="add">Добавить...</string>
     <string name="busyness">Занятость</string>
@@ -145,5 +146,6 @@
     <string name="personal_data">Личные данные</string>
     <string name="tell_about_yourself">Расскажите о себе</string>
     <string name="send">Отправить</string>
+    <string name="example">example</string>
 
 </resources>

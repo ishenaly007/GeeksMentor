@@ -12,7 +12,6 @@ import com.abit8.geeksmentor.databinding.FragmentProfileBinding
 class ProfileFragment : Fragment() {
 
     private lateinit var binding: FragmentProfileBinding
-    val navController = findNavController()
 
     override fun onCreateView(
         inflater: LayoutInflater,

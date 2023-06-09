@@ -35,17 +35,38 @@
         android:id="@+id/logInFragment"
         android:name="com.abit8.geeksmentor.ui.auth.LogInFragment"
         android:label="fragment_log_in"
-        tools:layout="@layout/fragment_log_in" />
+        tools:layout="@layout/fragment_log_in" >
+        <action
+            android:id="@+id/action_logInFragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_logInFragment_to_passwordForgetFragment2"
+            app:destination="@id/passwordForgetFragment2" />
+        <action
+            android:id="@+id/action_logInFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+        <action
+            android:id="@+id/action_logInFragment_to_passwordForgetFragment"
+            app:destination="@id/passwordForgetFragment" />
+    </fragment>
     <fragment
         android:id="@+id/passwordForgetFragment"
         android:name="com.abit8.geeksmentor.ui.auth.PasswordForgetFragment"
         android:label="fragment_password_forget"
-        tools:layout="@layout/fragment_password_forget" />
+        tools:layout="@layout/fragment_password_forget" >
+        <action
+            android:id="@+id/action_passwordForgetFragment_to_passwordForgetFragment2"
+            app:destination="@id/passwordForgetFragment2" />
+    </fragment>
     <fragment
         android:id="@+id/signInFragment"
         android:name="com.abit8.geeksmentor.ui.auth.SignInFragment"
         android:label="fragment_sign_in"
-        tools:layout="@layout/fragment_sign_in" />
+        tools:layout="@layout/fragment_sign_in" >
+        <action
+            android:id="@+id/action_signInFragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
     <fragment
         android:id="@+id/passwordForgetFragment2"
         android:name="com.abit8.geeksmentor.ui.auth.PasswordForgetFragment2"

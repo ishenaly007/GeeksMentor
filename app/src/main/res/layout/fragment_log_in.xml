@@ -3,99 +3,101 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.auth.LogInFragment"
-    android:background="@color/white_new">
+    android:background="@color/white_new"
+    tools:context=".ui.auth.LogInFragment">
+
     <TextView
         android:id="@+id/arrow_signup"
         android:layout_width="24dp"
         android:layout_height="24dp"
-        android:background="@drawable/baseline_arrow_back"
-        android:layout_marginTop="78dp"
         android:layout_marginLeft="16dp"
-        />
+        android:layout_marginTop="78dp"
+        android:background="@drawable/baseline_arrow_back" />
+
     <ImageView
         android:layout_width="46dp"
         android:layout_height="67dp"
-        android:src="@drawable/logo_small"
         android:layout_gravity="center|top"
         android:layout_marginTop="72dp"
-        />
+        android:src="@drawable/logo_small" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/registration"
-        android:textSize="24sp"
-        android:fontFamily="@font/roboto_regular"
-        android:layout_marginTop="179dp"
         android:layout_marginLeft="16dp"
+        android:layout_marginTop="179dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/registration"
         android:textColor="@color/black_new"
-        />
+        android:textSize="24sp" />
+
     <EditText
-        android:id="@+id/et_login_signup"
+        android:id="@+id/et_names_signup"
+        style="@style/et_white_and_black"
         android:layout_width="328dp"
         android:layout_height="48dp"
-        android:hint="@string/login"
         android:layout_gravity="center|top"
         android:layout_marginTop="223dp"
         android:drawableLeft="@drawable/login_vector"
-        android:paddingLeft="16dp"
-        style="@style/et_white_and_black"
-        />
+        android:hint="@string/names"
+        android:paddingLeft="16dp" />
+
     <EditText
         android:id="@+id/et_email_signup"
+        style="@style/et_white_and_black"
         android:layout_width="328dp"
         android:layout_height="48dp"
-        android:hint="@string/email"
-        android:drawableLeft="@drawable/email_vector"
-        android:paddingLeft="16dp"
-        android:layout_marginTop="279dp"
         android:layout_gravity="center|top"
-        style="@style/et_white_and_black"
-        />
+        android:layout_marginTop="279dp"
+        android:drawableLeft="@drawable/email_vector"
+        android:hint="@string/email"
+        android:paddingLeft="16dp" />
+
     <EditText
         android:id="@+id/et_password_signup"
+        style="@style/et_white_and_black"
         android:layout_width="328dp"
         android:layout_height="48dp"
-        android:hint="@string/password"
-        android:drawableLeft="@drawable/lock_vector"
-        android:paddingLeft="16dp"
-        android:layout_marginTop="335dp"
         android:layout_gravity="center|top"
-        style="@style/et_white_and_black"
-        android:drawableRight="@drawable/eye_vector"
-        android:paddingRight="16dp"
-        />
+        android:layout_marginTop="335dp"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/lock_vector"
+        android:drawableEnd="@drawable/eye_vector"
+        android:hint="@string/password"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" />
+
     <EditText
         android:id="@+id/et_confirm_password_signup"
+        style="@style/et_white_and_black"
         android:layout_width="328dp"
         android:layout_height="48dp"
-        android:hint="@string/confirm_password"
-        android:drawableLeft="@drawable/lock_vector"
-        android:paddingLeft="16dp"
-        android:layout_marginTop="391dp"
         android:layout_gravity="center|top"
-        style="@style/et_white_and_black"
-        android:drawableRight="@drawable/eye_vector"
-        android:paddingRight="16dp"
-        />
+        android:layout_marginTop="391dp"
+
+        android:drawableStart="@drawable/lock_vector"
+        android:drawableEnd="@drawable/eye_vector"
+        android:hint="@string/confirm_password"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" />
+
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_registration_signup"
+        style="@style/btn_black_and_yellow"
         android:layout_width="328dp"
         android:layout_height="58dp"
         android:layout_gravity="center|top"
         android:layout_marginTop="458dp"
-        android:text="@string/registration2"
-        style="@style/btn_black_and_yellow"
-        />
+        android:text="@string/registration2" />
+
     <TextView
+        android:id="@+id/tv_have_account_enter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/have_account_enter"
-        android:fontFamily="@font/roboto_medium"
-        android:textSize="16sp"
-        android:textColor="@color/black_new"
         android:layout_gravity="center|top"
         android:layout_marginTop="535dp"
-        />
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/have_account_enter"
+        android:textColor="@color/black_new"
+        android:textSize="16sp" />
 </FrameLayout>
