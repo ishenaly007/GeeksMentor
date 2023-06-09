@@ -9,23 +9,24 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.abit8.geeksmentor.R
 import com.abit8.geeksmentor.databinding.FragmentLogInBinding
-import com.google.firebase.auth.FirebaseAuth
+import org.json.JSONObject
 
 class LogInFragment : Fragment() {
 
-    private lateinit var binding: FragmentLogInBinding
+    private var _binding: FragmentLogInBinding? = null
+    private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentLogInBinding.inflate(inflater, container, false)
-        return requireView()
+        _binding = FragmentLogInBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
         binding.tvHaveAccountEnter.setOnClickListener {
             findNavController().navigate(R.id.signInFragment)
@@ -37,8 +38,7 @@ class LogInFragment : Fragment() {
             val confirmPassword = binding.etConfirmPasswordSignup.text.toString()
 
             if (email.isNotEmpty() && password.isNotEmpty() && confirmPassword.isNotEmpty()) {
-                registerUser(email, password, confirmPassword)
-                findNavController().navigate(R.id.scroll_home)
+                signUpButtonClicked(email, password, confirmPassword)
             } else {
                 Toast.makeText(
                     requireContext(),
@@ -47,32 +47,39 @@ class LogInFragment : Fragment() {
                 ).show()
             }
         }
-
     }
 
-    private fun registerUser(email: String, password: String, confirmPassword: String) {
+    private fun signUpButtonClicked(email: String, password: String, confirmPassword: String) {
         if (password.isNotEmpty() && confirmPassword.isNotEmpty()) {
             if (password == confirmPassword) {
-                // Пароль и его подтверждение совпадают
-                FirebaseAuth.getInstance().createUserWithEmailAndPassword(email, password)
-                    .addOnCompleteListener { task ->
-                        if (task.isSuccessful) {
-                            // Регистрация успешна
-                            Toast.makeText(
-                                requireContext(),
-                                "Registration successful",
-                                Toast.LENGTH_SHORT
-                            ).show()
-                            // Дополнительные действия после успешной регистрации
-                        } else {
-                            // Регистрация не удалась
-                            Toast.makeText(
-                                requireContext(),
-                                "Registration error: ${task.exception?.message}",
-                                Toast.LENGTH_SHORT
-                            ).show()
-                        }
-                    }
+                // Вместо этого вы можете использовать фактический запрос к серверу или файлу JSON
+                val json = """
+                {
+                    "success": true
+                }
+            """.trimIndent()
+
+                // Разбор JSON и проверка успешности регистрации
+                val jsonObject = JSONObject(json)
+                val success = jsonObject.getBoolean("success")
+
+                if (success) {
+                    // Регистрация успешна
+                    Toast.makeText(
+                        requireContext(),
+                        "Registration successful",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                    // Дополнительные действия после успешной регистрации
+                    findNavController().navigate(R.id.scroll_home)
+                } else {
+                    // Регистрация не удалась
+                    Toast.makeText(
+                        requireContext(),
+                        "Registration error: Something went wrong",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                }
             } else {
                 // Пароль и его подтверждение не совпадают
                 Toast.makeText(context, "Passwords do not match", Toast.LENGTH_SHORT).show()
@@ -82,6 +89,12 @@ class LogInFragment : Fragment() {
             Toast.makeText(context, "Please fill in all password fields", Toast.LENGTH_SHORT).show()
         }
     }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
+
 
     //для выхода из аккаунта -> Firebase.auth.signOut()
 }

@@ -10,8 +10,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.abit8.geeksmentor.R
 import com.abit8.geeksmentor.databinding.FragmentSignInBinding
-import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException
+import org.json.JSONObject
 
 class SignInFragment : Fragment() {
 
@@ -41,37 +40,28 @@ class SignInFragment : Fragment() {
     private fun signInButtonClicked(email: String, password: String) {
         if (email.isNotEmpty() && password.isNotEmpty()) {
             if (Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-                FirebaseAuth.getInstance().signInWithEmailAndPassword(email, password)
-                    .addOnCompleteListener { task ->
-                        if (task.isSuccessful) {
-                            // Вход выполнен успешно
-                            findNavController().navigate(R.id.scroll_home)
-                        } else {
-                            // Вход не удался
-                            val message = task.exception?.message
-                            if (task.exception is FirebaseAuthInvalidCredentialsException) {
-                                Toast.makeText(
-                                    requireContext(),
-                                    "Неправильный формат электронной почты",
-                                    Toast.LENGTH_SHORT
-                                ).show()
-                            } else {
-                                Toast.makeText(
-                                    requireContext(),
-                                    "Ошибка входа: $message",
-                                    Toast.LENGTH_SHORT
-                                ).show()
-                            }
-                        }
-                    }
-                    .addOnFailureListener { exception ->
-                        // Обработка исключений
-                        Toast.makeText(
-                            requireContext(),
-                            "Ошибка входа: ${exception.message}",
-                            Toast.LENGTH_SHORT
-                        ).show()
-                    }
+                // Вместо этого вы можете использовать фактический запрос к серверу или файлу JSON
+                val json = """
+                {
+                    "success": true
+                }
+            """.trimIndent()
+
+                // Разбор JSON и проверка успешности входа
+                val jsonObject = JSONObject(json)
+                val success = jsonObject.getBoolean("success")
+
+                if (success) {
+                    // Вход выполнен успешно
+                    findNavController().navigate(R.id.scroll_home)
+                } else {
+                    // Вход не удался
+                    Toast.makeText(
+                        requireContext(),
+                        "Ошибка входа: неверный адрес электронной почты или пароль",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                }
             } else {
                 Toast.makeText(
                     requireContext(),
@@ -88,5 +78,5 @@ class SignInFragment : Fragment() {
         super.onDestroyView()
         _binding = null
     }
-}
 
+}
