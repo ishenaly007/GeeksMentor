@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/mrg_hor_16"
-        tools:context=".presentation.mentorprofile.editmentorprofile.EditProfileFragment">
+        tools:context=".presentation.fragment.mentorprofile.editmentorprofile.EditProfileFragment">
 
         <ImageView
             android:id="@+id/btn_back"

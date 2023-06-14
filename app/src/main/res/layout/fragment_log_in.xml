@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".presentation.auth.LogInFragment"
+    tools:context=".presentation.fragment.auth.LogInFragment"
     android:background="@color/white_new">
     <TextView
         android:id="@+id/arrow_signup"
