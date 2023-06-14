@@ -9,11 +9,10 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.launch
 
-
 abstract class BaseViewModel : ViewModel() {
 
     protected fun <T> Flow<Resource<T>>.collectFlow(_state: MutableStateFlow<UIState<T>>) {
-        viewModelScope.launch(Dispatchers.IO) {
+        viewModelScope.launch {
             collect { res ->
                 when (res) {
                     is Resource.Loading -> {

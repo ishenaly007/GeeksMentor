@@ -14,6 +14,7 @@ import com.abit8.geeksmentor.presentation.base.BaseFragment
 
 class SearchFragment :
     BaseFragment<SearchViewModel, FragmentSearchBinding>(R.layout.fragment_search) {
+
     override val viewModel by viewModels<SearchViewModel>()
     override val binding by viewBinding(FragmentSearchBinding::bind)
     val adapter: MentorsOfMonthAdapter by lazy { MentorsOfMonthAdapter(this::onClick) }
@@ -41,7 +42,7 @@ class SearchFragment :
 
     private fun subscribeToSearch() = with(binding) {
         viewModel.getMentorsOfMonth.collectUIState(
-            state = {
+            uiState = {
                 // it.setupViewVisibility()
             },
             onSuccess = {
