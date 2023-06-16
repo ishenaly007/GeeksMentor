@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:fillViewport="true"
+    android:fitsSystemWindows="true"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/frame_home"
@@ -105,7 +106,7 @@
             android:layout_marginEnd="16dp"
             style="@style/btn_light_grey"
             android:text="@string/android"
-            android:drawableLeft="@drawable/kotlin"
+            android:drawableLeft="@drawable/kotlin1"
             app:layout_constraintTop_toBottomOf="@+id/btn_frontend_home"
             app:layout_constraintEnd_toEndOf="parent"
             android:textSize="14sp"
@@ -159,8 +160,7 @@
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="16dp"
             android:layout_marginTop="25dp"
-            style="@style/text_14"
-            />
+            style="@style/text_14" />
 
         <TextView
             android:id="@+id/tv_all_mentors"
@@ -186,6 +186,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="24dp"
             android:layout_marginStart="16dp"
+            android:layout_marginBottom="6dp"
             />
         <TextView
             android:id="@+id/tv_ux_ui_mentors"

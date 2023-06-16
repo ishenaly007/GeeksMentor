@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="123dp"
+    android:layout_width="133dp"
     android:layout_height="145dp"
+    android:layout_marginEnd="8dp"
+    card_view:cardElevation="0dp"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
+
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/rv2_img"
         android:layout_width="90dp"
         android:layout_height="90dp"
-        android:src="@drawable/rv1_img"
         android:layout_gravity="center|top"
         />
     <TextView
@@ -81,7 +84,7 @@
         android:id="@+id/rv2_dislike"
         android:layout_width="wrap_content"
         android:layout_height="25dp"
-        android:drawableBottom="@drawable/like_vector"
+        android:drawableBottom="@drawable/dislike"
         android:layout_gravity="bottom|left"
         android:layout_marginLeft="112dp"
         android:layout_marginBottom="2dp"

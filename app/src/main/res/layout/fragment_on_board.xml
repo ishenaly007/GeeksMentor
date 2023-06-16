@@ -4,6 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:background="@color/black_new"
     tools:context=".presentation.onboard.OnBoardFragment">
 
     <androidx.viewpager2.widget.ViewPager2
@@ -14,31 +16,6 @@
 
     <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
         android:id="@+id/dots_indicator"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:text="@string/find_mentor_board1"
-        android:textSize="26sp"
-        android:fontFamily="@font/roboto_medium"
-        android:textColor="@color/white_new"
-        android:layout_gravity="bottom|center"
-        android:layout_marginBottom="148dp"
-        android:layout_marginLeft="16dp"
-        />
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_boarding1"
-        android:layout_width="328dp"
-        android:layout_height="58dp"
-        android:layout_gravity="center|bottom"
-        android:layout_marginBottom="84dp"
-        app:cornerRadius="10dp"
-        android:text="@string/continue_board1"
-        android:textAllCaps="false"
-        android:drawableRight="@drawable/arrow_right_black"
-        android:paddingLeft="36dp"
-        style="@style/btn_yellow_and_black" />
-
-    <!--<com.tbuonomo.viewpagerdotsindicator.DotsIndicator
         app:dotsSize="10dp"
         app:dotsColor="@color/white"
         app:selectedDotColor="@color/white"
@@ -47,6 +24,6 @@
         app:dotsSpacing="4dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|center" />-->
+        android:layout_gravity="bottom|center" />
 
 </FrameLayout>

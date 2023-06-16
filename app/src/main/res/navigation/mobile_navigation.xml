@@ -27,6 +27,7 @@
             android:id="@+id/action_onBoardFragment_to_navigation_home"
             app:destination="@id/navigation_home" />
     </fragment>
+
     <fragment
         android:id="@+id/logInFragment"
         android:name="com.abit8.geeksmentor.presentation.auth.LogInFragment"
@@ -94,6 +95,11 @@
         android:name="com.abit8.geeksmentor.presentation.profile.DataFragment"
         android:label="fragment_data"
         tools:layout="@layout/fragment_data" />
+    <activity
+        android:id="@+id/splashActivity"
+        android:name="com.abit8.geeksmentor.SplashActivity"
+        android:label="activity_splash"
+        tools:layout="@layout/activity_splash" />
 
 
 </navigation>
