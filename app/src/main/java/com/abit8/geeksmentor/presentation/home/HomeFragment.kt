@@ -9,14 +9,11 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.LinearSnapHelper
 import androidx.recyclerview.widget.RecyclerView
-import androidx.recyclerview.widget.SnapHelper
 import com.abit8.geeksmentor.R
 import com.abit8.geeksmentor.data.model.Mentors
 import com.abit8.geeksmentor.databinding.FragmentHomeBinding
-import com.abit8.geeksmentor.presentation.home.adapter.MentorsMonthAdapter
-import com.abit8.geeksmentor.presentation.home.adapter.MentorsUxUiAdapter
+import com.abit8.geeksmentor.presentation.home.adapter.*
 import com.abit8.geeksmentor.utils.NetworkChangeListener
 
 @Suppress("DEPRECATION")
@@ -28,12 +25,21 @@ class HomeFragment : Fragment() {
     private val binding get() = _binding!!
 
     private lateinit var recyclerView: RecyclerView
-    //Month Mentors
+    // Month Mentors
     private lateinit var mentorsListMonth: ArrayList<Mentors>
     private lateinit var mentorsMonthAdapter: MentorsMonthAdapter
-    //Ux/Ui Mentors
+    // Ux/Ui Mentors
     private lateinit var mentorsListUxUi: ArrayList<Mentors>
     private lateinit var mentorsUxUiAdapter: MentorsUxUiAdapter
+    // Android Mentors
+    private lateinit var mentorsListAndroid: ArrayList<Mentors>
+    private lateinit var mentorsAndroidAdapter: MentorsAndroidAdapter
+    // Frontend Mentors
+    private lateinit var mentorsListFrontend: ArrayList<Mentors>
+    private lateinit var mentorsFrontendAdapter: MentorsFrontendAdapter
+    // Backend Mentors
+    private lateinit var mentorsListBackend: ArrayList<Mentors>
+    private lateinit var mentorsBackendAdapter: MentorsBackendAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -50,6 +56,63 @@ class HomeFragment : Fragment() {
         initClicks()
         sliderMonth()
         sliderUxUi()
+        sliderAndroid()
+        sliderFrontend()
+        sliderBackend()
+    }
+
+    private fun sliderBackend() {
+        recyclerView = binding.rv5Main
+        recyclerView.setHasFixedSize(true)
+        recyclerView.layoutManager = LinearLayoutManager(requireContext(), RecyclerView.HORIZONTAL, false)
+        mentorsListBackend = ArrayList()
+        addDataMentorsBackend()
+        mentorsBackendAdapter = MentorsBackendAdapter(mentorsListBackend)
+        recyclerView.adapter = mentorsBackendAdapter
+    }
+
+    private fun addDataMentorsBackend() {
+        mentorsListBackend.add(Mentors(R.drawable.avatar, "Akbar", 13, 9,4))
+        mentorsListBackend.add(Mentors(R.drawable.avatar, "Ishenaly", 17, 13,4))
+        mentorsListBackend.add(Mentors(R.drawable.avatar, "Ahmad", 12, 11,1))
+        mentorsListBackend.add(Mentors(R.drawable.avatar, "Ayana", 5, 4,1))
+        mentorsListBackend.add(Mentors(R.drawable.avatar, "Kairat", 7, 7,0))
+    }
+
+    private fun sliderFrontend() {
+        recyclerView = binding.rv4Main
+        recyclerView.setHasFixedSize(true)
+        recyclerView.layoutManager = LinearLayoutManager(requireContext(), RecyclerView.HORIZONTAL, false)
+        mentorsListFrontend = ArrayList()
+        addDataMentorsFrontend()
+        mentorsFrontendAdapter = MentorsFrontendAdapter(mentorsListFrontend)
+        recyclerView.adapter = mentorsFrontendAdapter
+    }
+
+    private fun addDataMentorsFrontend() {
+        mentorsListFrontend.add(Mentors(R.drawable.avatar, "Akbar", 13, 9,4))
+        mentorsListFrontend.add(Mentors(R.drawable.avatar, "Ishenaly", 17, 13,4))
+        mentorsListFrontend.add(Mentors(R.drawable.avatar, "Ahmad", 12, 11,1))
+        mentorsListFrontend.add(Mentors(R.drawable.avatar, "Ayana", 5, 4,1))
+        mentorsListFrontend.add(Mentors(R.drawable.avatar, "Kairat", 7, 7,0))
+    }
+
+    private fun sliderAndroid() {
+        recyclerView = binding.rv3Main
+        recyclerView.setHasFixedSize(true)
+        recyclerView.layoutManager = LinearLayoutManager(requireContext(), RecyclerView.HORIZONTAL, false)
+        mentorsListAndroid = ArrayList()
+        addDataMentorsAndroid()
+        mentorsAndroidAdapter = MentorsAndroidAdapter(mentorsListAndroid)
+        recyclerView.adapter = mentorsAndroidAdapter
+    }
+
+    private fun addDataMentorsAndroid() {
+        mentorsListAndroid.add(Mentors(R.drawable.avatar, "Akbar", 13, 9,4))
+        mentorsListAndroid.add(Mentors(R.drawable.avatar, "Ishenaly", 17, 13,4))
+        mentorsListAndroid.add(Mentors(R.drawable.avatar, "Ahmad", 12, 11,1))
+        mentorsListAndroid.add(Mentors(R.drawable.avatar, "Ayana", 5, 4,1))
+        mentorsListAndroid.add(Mentors(R.drawable.avatar, "Kairat", 7, 7,0))
     }
 
     private fun sliderUxUi() {
