@@ -1,7 +1,6 @@
 package com.abit8.geeksmentor.data.repository
 
 import com.abit8.geeksmentor.data.base.BaseRepository
-import com.abit8.geeksmentor.data.local.mapper.toMentor
 import com.abit8.geeksmentor.data.remote.RetrofitClient
 import com.abit8.geeksmentor.data.remote.SearchApi
 import com.abit8.geeksmentor.domain.model.Mentor

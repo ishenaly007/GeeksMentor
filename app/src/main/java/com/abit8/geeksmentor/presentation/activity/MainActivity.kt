@@ -14,8 +14,9 @@ import androidx.navigation.ui.setupWithNavController
 import com.abit8.geeksmentor.R
 import com.abit8.geeksmentor.databinding.ActivityMainBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 //    private lateinit var pref: Pref
     private lateinit var binding: ActivityMainBinding

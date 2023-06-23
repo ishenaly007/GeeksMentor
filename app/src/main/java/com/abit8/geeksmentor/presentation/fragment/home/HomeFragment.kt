@@ -11,8 +11,10 @@ import androidx.navigation.fragment.findNavController
 import com.abit8.geeksmentor.R
 import com.abit8.geeksmentor.databinding.FragmentHomeBinding
 import com.abit8.geeksmentor.utils.NetworkChangeListener
+import dagger.hilt.android.AndroidEntryPoint
 
 @Suppress("DEPRECATION")
+@AndroidEntryPoint
 class HomeFragment : Fragment() {
     private val networkChangeListener: NetworkChangeListener by lazy {
         NetworkChangeListener()

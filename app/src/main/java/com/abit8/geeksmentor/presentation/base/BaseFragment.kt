@@ -32,8 +32,8 @@ abstract class BaseFragment<
     final override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         initialize()
-        setupSubscribers()
         setupRequests()
+        setupSubscribers()
         initListeners()
     }
 

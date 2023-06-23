@@ -15,6 +15,7 @@ class MentorsOfMonthAdapter(
 ) : ListAdapter<Mentor, MentorsOfMonthAdapter.MentorViewHolder>(DiffUtilItemCallback()) {
 
 
+
     inner class MentorViewHolder(
         private val binding: List1ItemBinding
     ) :

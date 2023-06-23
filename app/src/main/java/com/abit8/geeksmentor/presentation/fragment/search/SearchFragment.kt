@@ -4,6 +4,7 @@ import androidx.core.os.bundleOf
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.viewModels
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.abit8.geeksmentor.R
@@ -11,11 +12,14 @@ import com.abit8.geeksmentor.databinding.FragmentSearchBinding
 import com.abit8.geeksmentor.domain.model.Mentor
 import com.abit8.geeksmentor.presentation.adapter.MentorsOfMonthAdapter
 import com.abit8.geeksmentor.presentation.base.BaseFragment
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class SearchFragment :
     BaseFragment<SearchViewModel, FragmentSearchBinding>(R.layout.fragment_search) {
 
     override val viewModel by viewModels<SearchViewModel>()
+
     override val binding by viewBinding(FragmentSearchBinding::bind)
     val adapter: MentorsOfMonthAdapter by lazy { MentorsOfMonthAdapter(this::onClick) }
 
@@ -38,6 +42,7 @@ class SearchFragment :
 
     private fun initSomeThins() {
         binding.rv1Search.adapter = adapter
+
     }
 
     private fun subscribeToSearch() = with(binding) {
@@ -46,7 +51,7 @@ class SearchFragment :
                 // it.setupViewVisibility()
             },
             onSuccess = {
-                adapter.submitList(it)
+
             }
         )
     }
