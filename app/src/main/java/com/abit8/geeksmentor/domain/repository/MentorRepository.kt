@@ -1,5 +1,6 @@
 package com.abit8.geeksmentor.domain.repository
 
+import com.abit8.geeksmentor.data.model.MentorModel
 import com.abit8.geeksmentor.domain.model.Mentor
 import com.abit8.geeksmentor.domain.utils.Resource
 import kotlinx.coroutines.flow.Flow

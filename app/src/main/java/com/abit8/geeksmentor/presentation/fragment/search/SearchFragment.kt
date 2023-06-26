@@ -4,7 +4,6 @@ import androidx.core.os.bundleOf
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.abit8.geeksmentor.R
@@ -51,7 +50,7 @@ class SearchFragment :
                 // it.setupViewVisibility()
             },
             onSuccess = {
-
+                adapter.submitList(it)
             }
         )
     }

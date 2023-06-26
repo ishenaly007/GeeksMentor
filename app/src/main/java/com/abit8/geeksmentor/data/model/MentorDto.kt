@@ -2,7 +2,11 @@ package com.abit8.geeksmentor.data.model
 
 import com.abit8.geeksmentor.domain.model.Mentor
 
-class MentorDto(
+data class MentorModel(
+    val hits: List<MentorDto>
+)
+
+data class MentorDto(
     val address: Address,
     val age: Int,
     val birthDate: String,

@@ -14,7 +14,20 @@ class MentorsOfMonthAdapter(
     private val onClick: (Mentor) -> Unit
 ) : ListAdapter<Mentor, MentorsOfMonthAdapter.MentorViewHolder>(DiffUtilItemCallback()) {
 
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MentorViewHolder {
+        return MentorViewHolder(
+            List1ItemBinding.inflate(
+                LayoutInflater.from(
+                    parent.context
+                ),
+                parent, false
+            )
+        )
+    }
 
+    override fun onBindViewHolder(holder: MentorsOfMonthAdapter.MentorViewHolder, position: Int) {
+        holder.bind(getItem(position))
+    }
 
     inner class MentorViewHolder(
         private val binding: List1ItemBinding
@@ -30,21 +43,6 @@ class MentorsOfMonthAdapter(
                 onClick(mentor)
             }
         }
-    }
-
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MentorViewHolder {
-        return MentorViewHolder(
-            List1ItemBinding.inflate(
-                LayoutInflater.from(
-                    parent.context
-                ),
-                parent, false
-            )
-        )
-    }
-
-    override fun onBindViewHolder(holder: MentorsOfMonthAdapter.MentorViewHolder, position: Int) {
-        holder.bind(getItem(position))
     }
 
     @SuppressLint("DiffUtilEquals")

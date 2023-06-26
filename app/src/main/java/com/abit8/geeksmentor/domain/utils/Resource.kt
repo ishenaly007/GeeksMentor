@@ -1,6 +1,6 @@
 package com.abit8.geeksmentor.domain.utils
 
-sealed class Resource<out T>(
+sealed class Resource<T>(
     val data: T? = null,
     val message: String? = null,
 ) {

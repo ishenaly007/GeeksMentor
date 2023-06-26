@@ -7,12 +7,10 @@ import kotlinx.coroutines.flow.flowOn
 import java.io.IOException
 
 abstract class BaseRepository {
-
     protected fun <T> doRequest(request: suspend () -> T) = flow {
         emit(Resource.Loading())
         try {
-            val data = request()
-            emit(Resource.Success(data))
+            emit(Resource.Success(request()))
         } catch (ioException: IOException) {
             emit(Resource.Error(ioException.localizedMessage ?: "Unknown error"))
         }

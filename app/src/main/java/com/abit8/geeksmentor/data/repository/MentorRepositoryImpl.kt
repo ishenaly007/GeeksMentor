@@ -8,7 +8,7 @@ import com.abit8.geeksmentor.domain.repository.MentorRepository
 import com.abit8.geeksmentor.domain.utils.Resource
 import kotlinx.coroutines.flow.Flow
 
-class MentorRepositoryImpl() : MentorRepository, BaseRepository() {
+class MentorRepositoryImpl : BaseRepository(), MentorRepository {
 
     private val searchApi: SearchApi by lazy {
         RetrofitClient.create()
