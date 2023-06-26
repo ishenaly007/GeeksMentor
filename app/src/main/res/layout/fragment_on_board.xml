@@ -23,20 +23,23 @@
         android:textColor="@color/white_new"
         android:layout_gravity="bottom|center"
         android:layout_marginBottom="148dp"
-        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
         />
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_boarding1"
-        android:layout_width="328dp"
+        android:layout_width="match_parent"
         android:layout_height="58dp"
+        android:layout_marginEnd="@dimen/mrg_hor_16"
+        android:layout_marginStart="@dimen/mrg_hor_16"
         android:layout_gravity="center|bottom"
         android:layout_marginBottom="84dp"
         app:cornerRadius="10dp"
         android:text="@string/continue_board1"
         android:textAllCaps="false"
-        android:drawableRight="@drawable/arrow_right_black"
-        android:paddingLeft="36dp"
-        style="@style/btn_yellow_and_black" />
+        android:drawableEnd="@drawable/arrow_right_black"
+        android:paddingStart="36dp"
+        style="@style/btn_yellow_and_black"
+        tools:ignore="RtlSymmetry" />
 
     <!--<com.tbuonomo.viewpagerdotsindicator.DotsIndicator
         app:dotsSize="10dp"

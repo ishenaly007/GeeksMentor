@@ -42,8 +42,10 @@
         />
     <EditText
         android:id="@+id/et_login_signup"
-        android:layout_width="328dp"
+        android:layout_width="match_parent"
         android:layout_height="48dp"
+        android:layout_marginEnd="@dimen/mrg_hor_16"
+        android:layout_marginStart="@dimen/mrg_hor_16"
         android:hint="@string/login"
         android:layout_marginTop="16dp"
         android:drawableStart="@drawable/login_vector"
@@ -55,8 +57,10 @@
         tools:ignore="Autofill,RtlSymmetry,TextFields" />
     <EditText
         android:id="@+id/et_email_signup"
-        android:layout_width="328dp"
+        android:layout_width="match_parent"
         android:layout_height="48dp"
+        android:layout_marginEnd="@dimen/mrg_hor_16"
+        android:layout_marginStart="@dimen/mrg_hor_16"
         android:hint="@string/email"
         android:drawableStart="@drawable/email_vector"
         android:paddingStart="16dp"
@@ -69,8 +73,10 @@
         tools:ignore="Autofill,RtlSymmetry,TextFields" />
     <EditText
         android:id="@+id/et_password_signup"
-        android:layout_width="328dp"
+        android:layout_width="match_parent"
         android:layout_height="48dp"
+        android:layout_marginEnd="@dimen/mrg_hor_16"
+        android:layout_marginStart="@dimen/mrg_hor_16"
         android:hint="@string/password"
         android:drawableStart="@drawable/lock_vector"
         android:paddingLeft="16dp"
@@ -84,8 +90,10 @@
         tools:ignore="Autofill,RtlHardcoded,TextFields" />
     <EditText
         android:id="@+id/et_confirm_password_signup"
-        android:layout_width="328dp"
+        android:layout_width="match_parent"
         android:layout_height="48dp"
+        android:layout_marginEnd="@dimen/mrg_hor_16"
+        android:layout_marginStart="@dimen/mrg_hor_16"
         android:hint="@string/confirm_password"
         android:drawableStart="@drawable/lock_vector"
         android:paddingLeft="16dp"
@@ -99,8 +107,10 @@
         tools:ignore="Autofill,TextFields" />
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_registration_signup"
-        android:layout_width="328dp"
+        android:layout_width="match_parent"
         android:layout_height="58dp"
+        android:layout_marginEnd="@dimen/mrg_hor_16"
+        android:layout_marginStart="@dimen/mrg_hor_16"
         android:layout_marginTop="19dp"
         android:text="@string/registration2"
         style="@style/btn_black_and_yellow"

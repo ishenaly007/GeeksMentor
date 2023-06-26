@@ -134,7 +134,9 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/enter_board3"
-            android:layout_width="328dp"
+            android:layout_width="match_parent"
+            android:layout_marginEnd="@dimen/mrg_hor_16"
+            android:layout_marginStart="@dimen/mrg_hor_16"
             android:layout_height="58dp"
             app:backgroundTint="@color/white_new"
             app:cornerRadius="10dp"
@@ -158,8 +160,10 @@
             />
         <com.google.android.material.button.MaterialButton
             android:id="@+id/register_board3"
-            android:layout_width="328dp"
+            android:layout_width="match_parent"
             android:layout_height="58dp"
+            android:layout_marginEnd="@dimen/mrg_hor_16"
+            android:layout_marginStart="@dimen/mrg_hor_16"
             app:backgroundTint="@color/white_new"
             app:cornerRadius="10dp"
             android:text="@string/registration"
@@ -173,8 +177,10 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_boarding3"
-            android:layout_width="328dp"
+            android:layout_width="match_parent"
             android:layout_height="58dp"
+            android:layout_marginEnd="@dimen/mrg_hor_16"
+            android:layout_marginStart="@dimen/mrg_hor_16"
             android:layout_gravity="center|bottom"
             android:layout_marginBottom="84dp"
             app:cornerRadius="10dp"
