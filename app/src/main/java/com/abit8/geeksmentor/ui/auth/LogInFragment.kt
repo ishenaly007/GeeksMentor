@@ -1,9 +1,11 @@
-package com.abit8.geeksmentor.ui.auth
-
 import android.os.Bundle
+import android.text.method.HideReturnsTransformationMethod
+import android.text.method.PasswordTransformationMethod
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.EditText
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
@@ -17,6 +19,7 @@ class LogInFragment : Fragment() {
     private val binding get() = _binding!!
 
     private var userLoggedIn = false // Флаг состояния аутентификации пользователя
+    private var isPasswordVisible = false // Флаг видимости пароля
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -48,6 +51,14 @@ class LogInFragment : Fragment() {
                     Toast.LENGTH_SHORT
                 ).show()
             }
+        }
+
+        binding.eyeIcon.setOnClickListener {
+            togglePasswordVisibility(binding.etPasswordSignup, binding.eyeIcon)
+        }
+
+        binding.eyeIconConfirm.setOnClickListener {
+            togglePasswordVisibility(binding.etConfirmPasswordSignup, binding.eyeIconConfirm)
         }
     }
 
@@ -97,7 +108,24 @@ class LogInFragment : Fragment() {
         }
     }
 
-    override fun onResume() {  //В методе onResume() происходит проверка значения userLoggedIn. Если оно равно false, то кнопка регистрации (btnRegistrationSignup) блокируется (отключается) и прозрачность кнопки устанавливается на 0.5 для указания недоступности. Если значение userLoggedIn равно true, то кнопка регистрации разблокируется (включается) и прозрачность кнопки устанавливается на 1.0 для указания доступности.
+    private fun togglePasswordVisibility(inputField: EditText, eyeIcon: ImageView) {
+        if (isPasswordVisible) {
+            // Пароль видимый - скрываем его
+            inputField.transformationMethod = PasswordTransformationMethod.getInstance()
+            eyeIcon.setImageResource(R.drawable.eye_vector)
+            isPasswordVisible = false
+        } else {
+            // Пароль скрытый - показываем его
+            inputField.transformationMethod = HideReturnsTransformationMethod.getInstance()
+            eyeIcon.setImageResource(R.drawable.baseline_remove_red_eye_24)
+            isPasswordVisible = true
+        }
+
+        // Перемещаем курсор в конец поля ввода
+        inputField.setSelection(inputField.text?.length ?: 0)
+    }
+
+    override fun onResume() {
         super.onResume()
 
         // Проверяем состояние аутентификации пользователя
@@ -116,7 +144,4 @@ class LogInFragment : Fragment() {
         super.onDestroyView()
         _binding = null
     }
-
-
-    //для выхода из аккаунта -> Firebase.auth.signOut()
 }
