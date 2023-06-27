@@ -147,5 +147,6 @@
     <string name="tell_about_yourself">Расскажите о себе</string>
     <string name="send">Отправить</string>
     <string name="example">example</string>
+    <string name="password_is_not_the_same">Пароли не совпадают</string>
 
 </resources>

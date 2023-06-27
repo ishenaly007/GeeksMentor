@@ -48,46 +48,41 @@ class PasswordForgetFragment2 : Fragment() {
                     ).show()
                 }
             }
-        } else {
-            Toast.makeText(requireContext(), "Код подтверждения отсутствует", Toast.LENGTH_SHORT)
-                .show()
+
+            private fun resetPassword(actionCode: String, confirmationCode: String) {
+                // Вместо этого вы можете использовать фактический запрос к серверу или файлу JSON
+                val json = """
+        {
+            "success": true
         }
+    """.trimIndent()
 
-        return binding.root
-    }
+                // Разбор JSON и проверка успешности сброса пароля
+                val jsonObject = JSONObject(json)
+                val success = jsonObject.getBoolean("success")
 
-    private fun resetPassword(actionCode: String, confirmationCode: String) {
-        val json = """
-            {
-                "success": true
+                if (success) {
+                    // Сброс пароля успешно подтвержден
+                    Toast.makeText(
+                        requireContext(),
+                        "Сброс пароля успешно подтвержден",
+                        Toast.LENGTH_SHORT
+                    ).show()
+
+                    // Переход в другой фрагмент
+                    findNavController().navigate(R.id.new_password_fragment)
+                } else {
+                    // Ошибка подтверждения сброса пароля
+                    Toast.makeText(
+                        requireContext(),
+                        "Ошибка подтверждения сброса пароля",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                }
             }
-        """.trimIndent()
 
-        // Разбор JSON и проверка успешности сброса пароля
-        val jsonObject = JSONObject(json)
-        val success = jsonObject.getBoolean("success")
 
-        if (success) {
-            // Сброс пароля успешно подтвержден
-            Toast.makeText(
-                requireContext(),
-                "Сброс пароля успешно подтвержден",
-                Toast.LENGTH_SHORT
-            ).show()
-
-            // Перенаправление пользователя на экран входа
-            findNavController().navigate(R.id.new_password_fragment)
-        } else {
-            // Ошибка подтверждения сброса пароля
-            Toast.makeText(
-                requireContext(),
-                "Ошибка подтверждения сброса пароля",
-                Toast.LENGTH_SHORT
-            ).show()
-        }
-    }
-
-    private fun startConfirmationCodeTimer(timerTextView: TextView) {
+            private fun startConfirmationCodeTimer(timerTextView: TextView) {
         confirmationCodeTimer = object : CountDownTimer(60000, 1000) {
             override fun onTick(millisUntilFinished: Long) {
                 remainingTimeMillis = millisUntilFinished

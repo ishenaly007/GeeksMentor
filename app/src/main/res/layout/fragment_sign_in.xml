@@ -61,7 +61,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="right"
         android:layout_marginTop="373dp"
-        android:layout_marginRight="16dp"
+        android:layout_marginRight="40dp"
         android:text="@string/forgot_your_password"
         android:theme="@style/text_14" />
 
