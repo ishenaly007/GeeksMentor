@@ -16,6 +16,8 @@ class LogInFragment : Fragment() {
     private var _binding: FragmentLogInBinding? = null
     private val binding get() = _binding!!
 
+    private var userLoggedIn = false // Флаг состояния аутентификации пользователя
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -42,7 +44,7 @@ class LogInFragment : Fragment() {
             } else {
                 Toast.makeText(
                     requireContext(),
-                    "Please fill in all the fields",
+                    "Пожалуйста, заполните все поля",
                     Toast.LENGTH_SHORT
                 ).show()
             }
@@ -67,26 +69,46 @@ class LogInFragment : Fragment() {
                     // Регистрация успешна
                     Toast.makeText(
                         requireContext(),
-                        "Registration successful",
+                        "Регистрация успешна",
                         Toast.LENGTH_SHORT
                     ).show()
+
+                    // Устанавливаем флаг состояния аутентификации пользователя в true
+                    userLoggedIn = true
+
                     // Дополнительные действия после успешной регистрации
                     findNavController().navigate(R.id.scroll_home)
                 } else {
                     // Регистрация не удалась
                     Toast.makeText(
                         requireContext(),
-                        "Registration error: Something went wrong",
+                        "Ошибка регистрации: что-то пошло не так",
                         Toast.LENGTH_SHORT
                     ).show()
                 }
             } else {
                 // Пароль и его подтверждение не совпадают
-                Toast.makeText(context, "Passwords do not match", Toast.LENGTH_SHORT).show()
+                Toast.makeText(context, "Пароли не совпадают", Toast.LENGTH_SHORT).show()
             }
         } else {
             // Пароль или его подтверждение пустые
-            Toast.makeText(context, "Please fill in all password fields", Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, "Пожалуйста, заполните все поля пароля", Toast.LENGTH_SHORT)
+                .show()
+        }
+    }
+
+    override fun onResume() {  //В методе onResume() происходит проверка значения userLoggedIn. Если оно равно false, то кнопка регистрации (btnRegistrationSignup) блокируется (отключается) и прозрачность кнопки устанавливается на 0.5 для указания недоступности. Если значение userLoggedIn равно true, то кнопка регистрации разблокируется (включается) и прозрачность кнопки устанавливается на 1.0 для указания доступности.
+        super.onResume()
+
+        // Проверяем состояние аутентификации пользователя
+        if (!userLoggedIn) {
+            // Пользователь не аутентифицирован, блокируем доступ к следующему фрагменту
+            binding.btnRegistrationSignup.isEnabled = false
+            binding.btnRegistrationSignup.alpha = 0.5f
+        } else {
+            // Пользователь аутентифицирован, разрешаем доступ к следующему фрагменту
+            binding.btnRegistrationSignup.isEnabled = true
+            binding.btnRegistrationSignup.alpha = 1.0f
         }
     }
 
