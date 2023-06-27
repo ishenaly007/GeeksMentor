@@ -1,50 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.onboard.OnBoardFragment">
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        />
+        android:layout_height="match_parent" />
 
     <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
         android:id="@+id/dots_indicator"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-        android:text="@string/find_mentor_board1"
-        android:textSize="26sp"
-        android:fontFamily="@font/roboto_medium"
-        android:textColor="@color/white_new"
         android:layout_gravity="bottom|center"
-        android:layout_marginBottom="148dp"
+        android:layout_marginHorizontal="150dp"
         android:layout_marginLeft="16dp"
-        />
+        android:layout_marginBottom="48dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/find_mentor_board1"
+        android:textColor="@color/white_new"
+        android:textSize="26sp"
+        app:dotsColor="@color/white"
+        app:dotsSize="10dp"
+        app:dotsSpacing="4dp"
+        app:selectedDotColor="@color/white" />
+
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_boarding1"
+        style="@style/btn_yellow_and_black"
         android:layout_width="328dp"
         android:layout_height="58dp"
         android:layout_gravity="center|bottom"
         android:layout_marginBottom="84dp"
-        app:cornerRadius="10dp"
-        android:text="@string/continue_board1"
-        android:textAllCaps="false"
         android:drawableRight="@drawable/arrow_right_black"
         android:paddingLeft="36dp"
-        style="@style/btn_yellow_and_black"
-        />
+        android:text="@string/continue_board1"
+        android:textAllCaps="false"
+        app:cornerRadius="10dp" />
 
-        app:dotsSize="10dp"
-        app:dotsColor="@color/white"
-        app:selectedDotColor="@color/white"
-        android:layout_marginBottom="48dp"
-        android:layout_marginHorizontal="150dp"
-        app:dotsSpacing="4dp"
-        android:layout_gravity="bottom|center"/>
-  
+
 </FrameLayout>
