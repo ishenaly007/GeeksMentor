@@ -1,14 +1,8 @@
 package com.abit8.geeksmentor
 
-import android.graphics.Color
-
-import android.os.Build
-
 import android.os.Bundle
-import android.view.View
-import android.view.Window
+import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat
 import androidx.core.view.isVisible
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -17,7 +11,7 @@ import androidx.navigation.ui.setupWithNavController
 import com.abit8.geeksmentor.databinding.ActivityMainBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-
+@Suppress("DEPRECATION")
 class MainActivity : AppCompatActivity() {
 //    private lateinit var pref: Pref
     private lateinit var binding: ActivityMainBinding
@@ -27,15 +21,10 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
         val navView: BottomNavigationView = binding.navView
         val navController = findNavController(R.id.nav_host_fragment_activity_main)
 
         navController.navigate(R.id.onBoardFragment)
-//        pref = Pref(this)
-//        if (!pref.isUserSeen()) {
-//            navController.navigate(R.id.onBoardFragment)
-//        } -- чтоб только один раз работал онборд
 
         val appBarConfiguration = AppBarConfiguration(
             setOf(
@@ -44,8 +33,7 @@ class MainActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
-
-
+        supportActionBar?.hide()
         val bottomNavFragments = arrayListOf(
             R.id.navigation_home,
             R.id.navigation_search,
@@ -54,13 +42,9 @@ class MainActivity : AppCompatActivity() {
         navController.addOnDestinationChangedListener { controller, destination, arguments ->
             navView.isVisible = bottomNavFragments.contains(destination.id)
             if (destination.id == R.id.onBoardFragment) {
-                supportActionBar?.hide()
-                window.decorView.systemUiVisibility =
-                    View.SYSTEM_UI_FLAG_LAYOUT_STABLE or View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
-                window.statusBarColor = Color.TRANSPARENT
+                window.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS)
             } else {
-                supportActionBar?.show()
-                window.statusBarColor = ContextCompat.getColor(this, R.color.purple_700)
+                window.clearFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS)
             }
         }
     }

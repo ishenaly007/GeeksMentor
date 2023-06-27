@@ -109,6 +109,9 @@
     <string name="all_mentors">Все менторы</string>
     <string name="sultan_ergeshov">Султан Эргешов</string>
     <string name="ux_ui_mentors">Менторы по UX-UI Дизайну</string>
+    <string name="android_mentors">Менторы по Android</string>
+    <string name="frontend_mentors">Менторы по Frontend</string>
+    <string name="backend_mentors">Менторы по Backend</string>
     <string name="mentors_frontend">Менторы фронтенда</string>
     <string name="mentors_ux_ui">Менторы UX-UI</string>
     <string name="back">Назад</string>

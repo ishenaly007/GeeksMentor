@@ -8,13 +8,13 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/rv2_img"
+        android:id="@+id/rv3_img"
         android:layout_width="90dp"
         android:layout_height="90dp"
         android:layout_gravity="center|top"
         />
     <TextView
-        android:id="@+id/rv2_name"
+        android:id="@+id/rv3_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/sultan_ergeshov"
@@ -23,7 +23,7 @@
         android:layout_marginTop="98dp"
         />
     <TextView
-        android:id="@+id/rv2_person_num"
+        android:id="@+id/rv3_person_num"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="27"
@@ -36,7 +36,7 @@
         tools:ignore="RtlHardcoded,SmallSp"
         />
     <TextView
-        android:id="@+id/rv2_person"
+        android:id="@+id/rv3_person"
         android:layout_width="wrap_content"
         android:layout_height="25dp"
         android:drawableBottom="@drawable/users_vector"
@@ -46,7 +46,7 @@
         tools:ignore="RtlHardcoded,UseCompatTextViewDrawableXml" />
 
     <TextView
-        android:id="@+id/rv2_like_num"
+        android:id="@+id/rv3_like_num"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="14"
@@ -59,7 +59,7 @@
         tools:ignore="RtlHardcoded,SmallSp"
         />
     <TextView
-        android:id="@+id/rv2_like"
+        android:id="@+id/rv3_like"
         android:layout_width="wrap_content"
         android:layout_height="25dp"
         android:drawableBottom="@drawable/like_vector"
@@ -68,7 +68,7 @@
         android:layout_marginBottom="2dp"
         tools:ignore="RtlHardcoded,UseCompatTextViewDrawableXml" />
     <TextView
-        android:id="@+id/rv2_dislike_num"
+        android:id="@+id/rv3_dislike_num"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="13"
@@ -81,7 +81,7 @@
         tools:ignore="RtlHardcoded,SmallSp"
         />
     <TextView
-        android:id="@+id/rv2_dislike"
+        android:id="@+id/rv3_dislike"
         android:layout_width="wrap_content"
         android:layout_height="25dp"
         android:drawableBottom="@drawable/dislike"
