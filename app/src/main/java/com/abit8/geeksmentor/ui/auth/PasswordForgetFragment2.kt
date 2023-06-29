@@ -31,10 +31,6 @@ class PasswordForgetFragment2 : Fragment() {
         if (actionCode != null) {
             startConfirmationCodeTimer()
 
-            binding.btnBack.setOnClickListener {
-                findNavController().popBackStack()
-            }
-
             binding.btnConfirmCodeVerification.setOnClickListener {
                 val confirmationCode = binding.smsCodeView.getConfirmationCode()
                 if (confirmationCode.isNotEmpty()) {
@@ -49,8 +45,27 @@ class PasswordForgetFragment2 : Fragment() {
             }
         }
 
+        binding.btnBack.setOnClickListener {
+            onBackPressed()
+        }
+
         return binding.root
     }
+
+    private fun onBackPressed() {
+        // Если таймер работы кода подтверждения активен, отобразите сообщение о предупреждении
+        if (timerRunning) {
+            Toast.makeText(
+                requireContext(),
+                "Подтверждение кода активно. Вы уверены, что хотите покинуть этот экран?",
+                Toast.LENGTH_SHORT
+            ).show()
+        } else {
+            // В противном случае, вызовите супер-метод для стандартного поведения "Назад"
+            requireActivity().onBackPressed()
+        }
+    }
+
 
     private fun resetPassword(actionCode: String, confirmationCode: String) {
         // Здесь должен быть фактический запрос к серверу или файлу JSON для сброса пароля
@@ -119,24 +134,12 @@ class PasswordForgetFragment2 : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        requireActivity().onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
-            override fun handleOnBackPressed() {
-                onBackPressed()
-            }
-        })
-    }
-
-    private fun onBackPressed() {
-        // Если таймер работы кода подтверждения активен, отобразите сообщение о предупреждении
-        if (timerRunning) {
-            Toast.makeText(
-                requireContext(),
-                "Подтверждение кода активно. Вы уверены, что хотите покинуть этот экран?",
-                Toast.LENGTH_SHORT
-            ).show()
-        } else {
-            // В противном случае, вызовите супер-метод для стандартного поведения "Назад"
-            requireActivity().onBackPressed()
-        }
+        requireActivity().onBackPressedDispatcher.addCallback(
+            this,
+            object : OnBackPressedCallback(true) {
+                override fun handleOnBackPressed() {
+                    onBackPressed()
+                }
+            })
     }
 }
