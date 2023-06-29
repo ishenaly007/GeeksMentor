@@ -1,3 +1,5 @@
+package com.abit8.geeksmentor.ui.auth
+
 import android.os.Bundle
 import android.text.method.HideReturnsTransformationMethod
 import android.text.method.PasswordTransformationMethod

@@ -62,7 +62,7 @@ class PasswordForgetFragment2 : Fragment() {
             ).show()
         } else {
             // В противном случае, вызовите супер-метод для стандартного поведения "Назад"
-            requireActivity().onBackPressed()
+            findNavController().popBackStack()
         }
     }
 
