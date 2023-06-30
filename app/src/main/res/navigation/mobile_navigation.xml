@@ -30,7 +30,7 @@
 
     <fragment
         android:id="@+id/logInFragment"
-        android:name="com.abit8.geeksmentor.presentation.auth.LogInFragment"
+        android:name="com.abit8.geeksmentor.presentation.auth.SignInFragment"
         android:label="fragment_log_in"
         tools:layout="@layout/fragment_log_in" />
     <fragment
@@ -65,7 +65,7 @@
         android:label="fragment_mentors_data"
         tools:layout="@layout/fragment_data" />
     <fragment
-        android:id="@+id/profileFragment"
+        android:id="@+id/navigation_profile"
         android:name="com.abit8.geeksmentor.presentation.mentorprofile.MentorProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_mentor_profile">

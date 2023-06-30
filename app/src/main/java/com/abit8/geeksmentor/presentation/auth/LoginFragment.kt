@@ -9,7 +9,7 @@ import androidx.navigation.fragment.findNavController
 import com.abit8.geeksmentor.R
 import com.abit8.geeksmentor.databinding.FragmentLogInBinding
 
-class LogInFragment : Fragment() {
+class LoginFragment : Fragment() {
     private lateinit var binding: FragmentLogInBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

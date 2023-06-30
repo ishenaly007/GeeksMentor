@@ -10,6 +10,9 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.abit8.geeksmentor.databinding.ActivityMainBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 
 @Suppress("DEPRECATION")
 class MainActivity : AppCompatActivity() {
@@ -46,6 +49,16 @@ class MainActivity : AppCompatActivity() {
             } else {
                 window.clearFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS)
             }
+        }
+    }
+
+    override fun onBackPressed() {
+        val navController = findNavController(R.id.nav_host_fragment_activity_main)
+
+        if (navController.currentDestination?.id == R.id.navigation_home) {
+            finish() // Выход из активити или приложения, только если текущий фрагмент - navigation_home
+        } else {
+            super.onBackPressed() // Обычное поведение кнопки "Назад" для других фрагментов
         }
     }
 }

@@ -4,9 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="@dimen/mrg_hor_16"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/mentors_profile_language_fragment"
-    tools:context=".ui.profile.LanguageFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <TextView
         android:id="@+id/btn_back"

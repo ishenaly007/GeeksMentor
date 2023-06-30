@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/profile_fragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -27,6 +26,19 @@
         android:textSize="24sp"
         app:layout_constraintStart_toEndOf="@+id/mentors_profile_photo"
         app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/mentors_profile_second_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="No"
+        android:textColor="@color/black_new"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/mentors_profile_name"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="16dp"/>
 
     <TextView
         android:id="@+id/mentors_profile_major"
@@ -34,7 +46,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/mrg_hor_16"
         android:layout_marginTop="6dp"
-        android:text="@string/ux_ui_"
+        android:text="Студент"
         android:textColor="@color/black_new"
         android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@+id/mentors_profile_photo"
@@ -79,8 +91,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="365dp"
             android:layout_marginTop="3dp"
-            android:src="@drawable/right_arrow"
-            tools:ignore="ContentDescription" />
+            android:src="@drawable/right_arrow"/>
 
     </RelativeLayout>
 
@@ -107,8 +118,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="365dp"
             android:layout_marginTop="3dp"
-            android:src="@drawable/right_arrow"
-            tools:ignore="ContentDescription" />
+            android:src="@drawable/right_arrow" />
 
     </RelativeLayout>
 
@@ -135,8 +145,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="365dp"
             android:layout_marginTop="3dp"
-            android:src="@drawable/right_arrow"
-            tools:ignore="ContentDescription" />
+            android:src="@drawable/right_arrow"/>
 
     </RelativeLayout>
 
@@ -148,7 +157,6 @@
         android:fontFamily="@font/roboto_regular"
         android:letterSpacing="0"
         android:text="@string/exit"
-        android:layout_marginBottom="60dp"
         android:textAllCaps="false"
         android:textColor="@color/white_new"
         android:textSize="14sp"

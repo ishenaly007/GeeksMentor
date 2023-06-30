@@ -101,6 +101,7 @@
             app:layout_constraintTop_toBottomOf="@+id/et_group_num_change" />
 
         <Spinner
+            android:entries="@array/major_count"
             android:id="@id/major_spinner"
             android:layout_width="match_parent"
             android:layout_height="50dp"
