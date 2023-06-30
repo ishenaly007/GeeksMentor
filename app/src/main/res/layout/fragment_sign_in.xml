@@ -1,128 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/white_new">
+    android:background="@color/white_new"
+    tools:context=".presentation.auth.SignInFragment">
 
     <TextView
         android:id="@+id/arrow_main"
         android:layout_width="24dp"
         android:layout_height="24dp"
-        android:background="@drawable/baseline_arrow_back"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="16dp"
         android:layout_marginTop="78dp"
-        android:layout_marginStart="16dp"
-        />
+        android:background="@drawable/baseline_arrow_back" />
+
     <ImageView
-        android:id="@+id/logo_signup"
         android:layout_width="46dp"
         android:layout_height="67dp"
-        android:src="@drawable/logo_small"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_gravity="center|top"
         android:layout_marginTop="72dp"
-        tools:ignore="ContentDescription" />
+        android:src="@drawable/logo_small" />
+
     <TextView
-        android:id="@+id/enter_signup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="209dp"
         android:text="@string/enter"
-        android:layout_marginTop="70dp"
-        android:layout_marginStart="16dp"
-        android:theme="@style/text_24"
-        app:layout_constraintTop_toBottomOf="@+id/logo_signup"
-        app:layout_constraintStart_toStartOf="parent"
+        android:theme="@style/text_24" />
 
-        />
     <EditText
         android:id="@+id/et_login_main"
-        android:layout_width="match_parent"
+        style="@style/et_white_and_black"
+        android:layout_width="328dp"
         android:layout_height="48dp"
-        android:layout_marginEnd="@dimen/mrg_hor_16"
-        android:layout_marginStart="@dimen/mrg_hor_16"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="253dp"
+        android:drawableLeft="@drawable/login_vector"
         android:hint="@string/email"
-        android:layout_marginTop="16dp"
-        android:drawableStart="@drawable/login_vector"
-        android:paddingStart="16dp"
-        android:textSize="14sp"
-        style="@style/et_grey"
-        app:layout_constraintTop_toBottomOf="@+id/enter_signup"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingLeft="16dp"
+        android:textSize="14sp" />
 
-        tools:ignore="Autofill,RtlSymmetry,TextFields" />
     <EditText
         android:id="@+id/et_password_main"
-        android:layout_width="match_parent"
+        style="@style/et_white_and_black"
+        android:layout_width="328dp"
         android:layout_height="48dp"
-        android:layout_marginEnd="@dimen/mrg_hor_16"
-        android:layout_marginStart="@dimen/mrg_hor_16"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="309dp"
+        android:drawableLeft="@drawable/lock_vector"
+        android:drawableRight="@drawable/eye_vector"
         android:hint="@string/password"
-        android:drawableStart="@drawable/lock_vector"
         android:paddingLeft="16dp"
-        android:layout_marginTop="16dp"
-        android:textSize="14sp"
-        style="@style/et_grey"
-        android:drawableEnd="@drawable/eye_vector"
         android:paddingRight="16dp"
-        app:layout_constraintTop_toBottomOf="@+id/et_login_main"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="14sp" />
 
-        tools:ignore="Autofill,TextFields" />
     <TextView
-        android:id="@+id/forgot_password_main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="373dp"
+        android:layout_marginRight="40dp"
         android:text="@string/forgot_your_password"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:theme="@style/text_14"
-        app:layout_constraintTop_toBottomOf="@+id/et_password_main"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:theme="@style/text_14" />
 
-        />
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_enter_main"
-        android:layout_width="match_parent"
-        android:layout_height="58dp"
-        android:layout_marginEnd="@dimen/mrg_hor_16"
-        android:layout_marginStart="@dimen/mrg_hor_16"
-        android:layout_marginTop="24dp"
-        android:text="@string/enter2"
         style="@style/btn_black_and_yellow"
-        app:layout_constraintTop_toBottomOf="@+id/forgot_password_main"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="328dp"
+        android:layout_height="58dp"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="413dp"
+        android:text="@string/enter2" />
 
-        />
     <TextView
-        android:id="@+id/forgot_password_main2"
+        style="@style/text_16_regular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/or"
-        style="@style/text_16_regular"
-        android:layout_marginTop="32dp"
-        app:layout_constraintEnd_toEndOf="@+id/btn_enter_main"
-        app:layout_constraintStart_toStartOf="@+id/btn_enter_main"
-        app:layout_constraintTop_toBottomOf="@+id/btn_enter_main"
-        />
+        android:layout_gravity="center|top"
+        android:layout_marginTop="493dp"
+        android:text="@string/or" />
 
     <TextView
         android:id="@+id/tv_register_account"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="544dp"
         android:fontFamily="@font/roboto_medium"
         android:text="@string/no_account_register_it"
         android:textColor="@color/black_new"
-        android:textSize="16sp"
-        android:layout_marginTop="32dp"
-        app:layout_constraintEnd_toEndOf="@+id/forgot_password_main2"
-        app:layout_constraintStart_toStartOf="@+id/forgot_password_main2"
-        app:layout_constraintTop_toBottomOf="@+id/forgot_password_main2"
-        />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:textSize="16sp" />
+</FrameLayout>

@@ -12,24 +12,6 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
-    <string-array name="month_count">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
-        <item>6</item>
-        <item>7</item>
-    </string-array>
-
-    <string-array name="major_count">
-        <item>Android</item>
-        <item>Frontend</item>
-        <item>Backend</item>
-        <item>UX-UI designer</item>
-        <item>IOS developer</item>
-    </string-array>
-
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
         volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
@@ -82,15 +64,13 @@
     //Added new strings
     <string name="enter">Войдите</string>
     <string name="login">Логин</string>
-    <string name="name">Ваше имя</string>
-    <string name="second_name">Ваша фамилия</string>
-    <string name="save">Сохранить</string>
     <string name="forgot_your_password">Забыли пароль?</string>
     <string name="password">Пароль</string>
     <string name="enter2">Войти</string>
     <string name="enter_using_google">Войти с помощью Google</string>
     <string name="enter_using_facebook">Войти с помощью Facebook</string>
     <string name="or">или</string>
+    <string name="underlined_enter"><u>Войдите</u></string>
     <string name="no_account_register_it">Нет аккаунта? Зарегистрируйтесь</string>
     <string name="registration">Зарегистрироваться</string>
     <string name="confirm_password">Повторите пароль</string>
@@ -107,10 +87,14 @@
     <string name="title_profile">Profile</string>
     <string name="fio">ФИО</string>
     <string name="have_account_enter">Уже есть аккаунт? Войдите</string>
+    <string name="my_data">Мои данные</string>
+    <string name="language">Язык</string>
     <string name="notification">Уведомления</string>
+    <string name="edit_profile">Редактировать профиль</string>
     <string name="ux_ui_">UX-UI Дизайнер</string>
     <string name="okay_i_pull_up">Okay I pull up</string>
-
+    <string name="password_reset_success">Письмо для сброса пароля отправлено на вашу почту</string>
+    <string name="password_reset_failure">Ошибка при отправке письма для сброса пароля: %s</string>
     <string name="registration2">Регистрация</string>
     <string name="create_new_password">Придумайте новый пароль</string>
     <string name="new_password">Новый пароль</string>
@@ -127,13 +111,14 @@
     <string name="all_mentors">Все менторы</string>
     <string name="sultan_ergeshov">Султан Эргешов</string>
     <string name="ux_ui_mentors">Менторы по UX-UI Дизайну</string>
-    <string name="android_mentors">Менторы по Android</string>
-    <string name="frontend_mentors">Менторы по Frontend</string>
-    <string name="backend_mentors">Менторы по Backend</string>
-    <string name="mentors_frontend">Менторы фронтенда</string>
-    <string name="mentors_ux_ui">Менторы UX-UI</string>
     <string name="back">Назад</string>
-    <string name="my_data">Мои данные</string>
+    <string name="english">English</string>
+    <string name="kyrgyz">Кыргызча</string>
+    <string name="russian">Русский</string>
+    <string name="save">Сохранить</string>
+    <string name="second_name">Фамилия</string>
+    <string name="name">Имя</string>
+    <string name="sex">Пол</string>
     <string name="phone_number">Номер телефона</string>
     <string name="go_to_telegram">Перейти в Telegram</string>
     <string name="ratings_and_reviews_tv">Оценки и отзывы</string>
@@ -142,7 +127,6 @@
     <string name="names">ФИО</string>
     <string name="majority">Направление</string>
     <string name="about_yourself">О себе</string>
-    <string name="doesnt_matter">Меня зовут Султан, мне 21 годик. Всегда хотел потыкать компуктер и всё такое. Уже 5 месяцев тыкаю компуктер и рисую квадратики, иногда большие а иногда маленькие. Редко но иногда рисую элипсы. Люблю помогать другим людям тыкать в компуктер</string>
     <string name="skills">Навыки и умения</string>
     <string name="add">Добавить...</string>
     <string name="busyness">Занятость</string>
@@ -162,18 +146,7 @@
     <string name="personal_data">Личные данные</string>
     <string name="tell_about_yourself">Расскажите о себе</string>
     <string name="send">Отправить</string>
-
-    <string name="sex">Ваш пол</string>
-    <string name="russian">русский</string>
-    <string name="kyrgyz">кыргызча</string>
-    <string name="edit_profile">Редактировать профиль</string>
-    <string name="language">Язык</string>
-    <string name="ergeshov_sultan">Эргешов Султан</string>
-    <string name="_10_00">10:00</string>
-    <string name="_20_00">20:00</string>
     <string name="example">example</string>
-    <string name="best_mentors_list">best mentors list</string>
-    <string name="mentor_list">mentor list</string>
-    <string name="_59">59</string>
-    <string name="registrationinprocess">RegistrationInProcess</string>
+    <string name="password_is_not_the_same">Пароли не совпадают</string>
+
 </resources>

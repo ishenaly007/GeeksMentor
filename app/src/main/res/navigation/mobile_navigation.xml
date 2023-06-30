@@ -100,6 +100,30 @@
         android:name="com.abit8.geeksmentor.SplashActivity"
         android:label="activity_splash"
         tools:layout="@layout/activity_splash" />
+    <fragment
+        android:id="@+id/logInFragment2"
+        android:name="com.abit8.geeksmentor.presentation.auth.LogInFragment"
+        android:label="LogInFragment" />
+    <fragment
+        android:id="@+id/newPasswordFragment"
+        android:name="com.abit8.geeksmentor.presentation.auth.NewPasswordFragment"
+        android:label="fragment_new_password"
+        tools:layout="@layout/fragment_new_password" />
+    <fragment
+        android:id="@+id/passwordForgetFragment3"
+        android:name="com.abit8.geeksmentor.presentation.auth.PasswordForgetFragment"
+        android:label="fragment_password_forget"
+        tools:layout="@layout/fragment_password_forget" />
+    <fragment
+        android:id="@+id/passwordForgetFragment22"
+        android:name="com.abit8.geeksmentor.presentation.auth.PasswordForgetFragment2"
+        android:label="fragment_password_forget2"
+        tools:layout="@layout/fragment_password_forget2" />
+    <fragment
+        android:id="@+id/signInFragment2"
+        android:name="com.abit8.geeksmentor.presentation.auth.SignInFragment"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in" />
 
 
 </navigation>
